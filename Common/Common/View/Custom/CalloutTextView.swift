@@ -8,10 +8,7 @@
 import SwiftUI
 
 public struct CalloutTextView: View {
-    public init () {
-        
-    }
-    
+    public init () {}
     public var body: some View {
         ZStack {
             Text("Ahari")

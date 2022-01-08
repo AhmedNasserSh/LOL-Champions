@@ -2,110 +2,33 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Common/Common.xcodeproj">
+      location = "group:Podfile">
    </FileRef>
    <FileRef
-      location = "group:App/App.xcodeproj">
+      location = "group:LOLChampions/LOLChampions.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Common/Common.xcodeproj">
    </FileRef>
    <Group
       location = "group:features"
       name = "features">
-      <Group
-         location = "group:ChampionDetails"
-         name = "ChampionDetails">
-         <FileRef
-            location = "group:ChampionDetails.xcodeproj">
-         </FileRef>
-         <Group
-            location = "group:ChampionDetails"
-            name = "ChampionDetails">
-            <FileRef
-               location = "group:ChampionDetails.h">
-            </FileRef>
-            <Group
-               location = "group:ChampionDetails.docc"
-               name = "ChampionDetails.docc">
-               <FileRef
-                  location = "group:ChampionDetails.md">
-               </FileRef>
-            </Group>
-            <Group
-               location = "group:View"
-               name = "View">
-               <FileRef
-                  location = "group:ChampionDetailsView.swift">
-               </FileRef>
-            </Group>
-         </Group>
-         <Group
-            location = "group:ChampionDetailsTests"
-            name = "ChampionDetailsTests">
-            <FileRef
-               location = "group:ChampionDetailsTests.swift">
-            </FileRef>
-         </Group>
-      </Group>
       <Group
          location = "group:Home"
          name = "Home">
          <FileRef
             location = "group:Home.xcodeproj">
          </FileRef>
-         <Group
-            location = "group:Assets.xcassets"
-            name = "Assets.xcassets">
-            <Group
-               location = "group:AppIcon.appiconset"
-               name = "AppIcon.appiconset">
-               <FileRef
-                  location = "group:Contents.json">
-               </FileRef>
-            </Group>
-            <Group
-               location = "group:AccentColor.colorset"
-               name = "AccentColor.colorset">
-               <FileRef
-                  location = "group:Contents.json">
-               </FileRef>
-            </Group>
-            <Group
-               location = "group:Ahri.imageset"
-               name = "Ahri.imageset">
-               <FileRef
-                  location = "group:Contents.json">
-               </FileRef>
-               <FileRef
-                  location = "group:Ahri_0.jpeg">
-               </FileRef>
-            </Group>
-            <FileRef
-               location = "group:Contents.json">
-            </FileRef>
-         </Group>
-         <Group
-            location = "group:HomeTests"
-            name = "HomeTests">
-            <FileRef
-               location = "group:HomeTests.swift">
-            </FileRef>
-         </Group>
-         <Group
-            location = "group:View"
-            name = "View">
-            <Group
-               location = "group:HomeList"
-               name = "HomeList">
-               <FileRef
-                  location = "group:HomeListRow.swift">
-               </FileRef>
-               <FileRef
-                  location = "group:HomeList.swift">
-               </FileRef>
-            </Group>
-            <FileRef
-               location = "group:HomeGridView.swift">
-            </FileRef>
-         </Group>
+      </Group>
+      <Group
+         location = "group:ChampionDetails"
+         name = "ChampionDetails">
+         <FileRef
+            location = "group:ChampionDetails.xcodeproj">
+         </FileRef>
       </Group>
    </Group>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>

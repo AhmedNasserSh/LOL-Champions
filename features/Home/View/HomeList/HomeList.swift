@@ -13,17 +13,23 @@ struct HomeList: View {
 
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            LazyVGrid(columns: items, spacing: 5) {
-                ForEach(images, id: \.self) { category in
+            VStack {
+                Text("Pick your Champion")
+                    .font(.largeTitle)
+                    .padding(6)
+                    .foregroundColor(.white)
+            }
+            .frame(height: 50)
+            .padding()
+
+            LazyVGrid(columns: items, spacing: 0) {
+                ForEach(images, id: \.self) { _ in
                     HomeListRow()
                 }
             }
         }
-        .background(.black)
 
     }
-    
-    
 }
 
 struct HomeList_Previews: PreviewProvider {

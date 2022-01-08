@@ -1,0 +1,6 @@
+framework module Pods_ChampionDetails {
+  umbrella header "Pods-ChampionDetails-umbrella.h"
+
+  export *
+  module * { export * }
+}
