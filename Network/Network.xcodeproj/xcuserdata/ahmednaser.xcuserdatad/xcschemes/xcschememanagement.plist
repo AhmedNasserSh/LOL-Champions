@@ -4,10 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Common.xcscheme_^#shared#^_</key>
+		<key>Network.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>8</integer>
 		</dict>
 	</dict>
 </dict>
