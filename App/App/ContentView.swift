@@ -7,9 +7,11 @@
 
 import SwiftUI
 import ChampionDetails
+import Home
 
 struct ContentView: View {
     var body: some View {
+        HomeGridView()
         ChampionDetailsView()
     }
 }

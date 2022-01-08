@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E083DEA2789A19B009E7C7F /* Home.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4E083DE92789A19B009E7C7F /* Home.docc */; };
 		4E083DF02789A19B009E7C7F /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E083DE52789A19B009E7C7F /* Home.framework */; };
 		4E083DF52789A19B009E7C7F /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083DF42789A19B009E7C7F /* HomeTests.swift */; };
-		4E083DF62789A19B009E7C7F /* Home.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E083DE82789A19B009E7C7F /* Home.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E083E102789A1EB009E7C7F /* HomeListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083E0C2789A1EB009E7C7F /* HomeListRow.swift */; };
 		4E083E112789A1EB009E7C7F /* HomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083E0D2789A1EB009E7C7F /* HomeList.swift */; };
 		4E083E122789A1EB009E7C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E083E0E2789A1EB009E7C7F /* Assets.xcassets */; };
-		4E083E1E2789A218009E7C7F /* Common.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4E083E1A2789A204009E7C7F /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4E083E2A2789A2C7009E7C7F /* HomeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083E292789A2C7009E7C7F /* HomeGridView.swift */; };
+		4E083EC52789AFA1009E7C7F /* Common.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4E083EC22789AF8B009E7C7F /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +24,16 @@
 			remoteGlobalIDString = 4E083DE42789A19B009E7C7F;
 			remoteInfo = Home;
 		};
-		4E083E192789A204009E7C7F /* PBXContainerItemProxy */ = {
+		4E083EC12789AF8B009E7C7F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4E083E142789A204009E7C7F /* Common.xcodeproj */;
+			containerPortal = 4E083EBC2789AF8B009E7C7F /* Common.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4E083D8A27899B46009E7C7F;
 			remoteInfo = Common;
 		};
-		4E083E1B2789A204009E7C7F /* PBXContainerItemProxy */ = {
+		4E083EC32789AF8B009E7C7F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4E083E142789A204009E7C7F /* Common.xcodeproj */;
+			containerPortal = 4E083EBC2789AF8B009E7C7F /* Common.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4E083D9427899B46009E7C7F;
 			remoteInfo = CommonTests;
@@ -49,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4E083E1E2789A218009E7C7F /* Common.framework in Copy Frameworks */,
+				4E083EC52789AFA1009E7C7F /* Common.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,15 +56,15 @@
 
 /* Begin PBXFileReference section */
 		4E083DE52789A19B009E7C7F /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E083DE82789A19B009E7C7F /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
-		4E083DE92789A19B009E7C7F /* Home.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Home.docc; sourceTree = "<group>"; };
 		4E083DEF2789A19B009E7C7F /* HomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E083DF42789A19B009E7C7F /* HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
 		4E083E0C2789A1EB009E7C7F /* HomeListRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListRow.swift; sourceTree = "<group>"; };
 		4E083E0D2789A1EB009E7C7F /* HomeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeList.swift; sourceTree = "<group>"; };
 		4E083E0E2789A1EB009E7C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4E083E142789A204009E7C7F /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = ../Common/Common.xcodeproj; sourceTree = "<group>"; };
 		4E083E292789A2C7009E7C7F /* HomeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGridView.swift; sourceTree = "<group>"; };
+		4E083EBC2789AF8B009E7C7F /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = ../../Common/Common.xcodeproj; sourceTree = "<group>"; };
+		4E083EDA2789B026009E7C7F /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		4E083EDB2789B026009E7C7F /* Home.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Home.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +89,10 @@
 		4E083DDB2789A19B009E7C7F = {
 			isa = PBXGroup;
 			children = (
+				4E083EDD2789B026009E7C7F /* Home */,
 				4E083E132789A1F9009E7C7F /* Dependencies */,
 				4E083E0E2789A1EB009E7C7F /* Assets.xcassets */,
 				4E083E092789A1EB009E7C7F /* View */,
-				4E083DE72789A19B009E7C7F /* Home */,
 				4E083DF32789A19B009E7C7F /* HomeTests */,
 				4E083DE62789A19B009E7C7F /* Products */,
 			);
@@ -107,15 +105,6 @@
 				4E083DEF2789A19B009E7C7F /* HomeTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		4E083DE72789A19B009E7C7F /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				4E083DE82789A19B009E7C7F /* Home.h */,
-				4E083DE92789A19B009E7C7F /* Home.docc */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		4E083DF32789A19B009E7C7F /* HomeTests */ = {
@@ -147,19 +136,37 @@
 		4E083E132789A1F9009E7C7F /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				4E083E142789A204009E7C7F /* Common.xcodeproj */,
+				4E083EBC2789AF8B009E7C7F /* Common.xcodeproj */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		4E083E152789A204009E7C7F /* Products */ = {
+		4E083EBD2789AF8B009E7C7F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E083E1A2789A204009E7C7F /* Common.framework */,
-				4E083E1C2789A204009E7C7F /* CommonTests.xctest */,
+				4E083EC22789AF8B009E7C7F /* Common.framework */,
+				4E083EC42789AF8B009E7C7F /* CommonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		4E083EDC2789B026009E7C7F /* Home.docc */ = {
+			isa = PBXGroup;
+			children = (
+				4E083EDB2789B026009E7C7F /* Home.md */,
+			);
+			path = Home.docc;
+			sourceTree = "<group>";
+		};
+		4E083EDD2789B026009E7C7F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4E083EDA2789B026009E7C7F /* Home.h */,
+				4E083EDC2789B026009E7C7F /* Home.docc */,
+			);
+			name = Home;
+			path = "/Users/ahmednaser/Desktop/PlayProjects/LOL Champions/features/Home/Home";
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -168,7 +175,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E083DF62789A19B009E7C7F /* Home.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,8 +249,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 4E083E152789A204009E7C7F /* Products */;
-					ProjectRef = 4E083E142789A204009E7C7F /* Common.xcodeproj */;
+					ProductGroup = 4E083EBD2789AF8B009E7C7F /* Products */;
+					ProjectRef = 4E083EBC2789AF8B009E7C7F /* Common.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -256,18 +262,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		4E083E1A2789A204009E7C7F /* Common.framework */ = {
+		4E083EC22789AF8B009E7C7F /* Common.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Common.framework;
-			remoteRef = 4E083E192789A204009E7C7F /* PBXContainerItemProxy */;
+			remoteRef = 4E083EC12789AF8B009E7C7F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		4E083E1C2789A204009E7C7F /* CommonTests.xctest */ = {
+		4E083EC42789AF8B009E7C7F /* CommonTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = CommonTests.xctest;
-			remoteRef = 4E083E1B2789A204009E7C7F /* PBXContainerItemProxy */;
+			remoteRef = 4E083EC32789AF8B009E7C7F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -295,7 +301,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E083DEA2789A19B009E7C7F /* Home.docc in Sources */,
 				4E083E2A2789A2C7009E7C7F /* HomeGridView.swift in Sources */,
 				4E083E102789A1EB009E7C7F /* HomeListRow.swift in Sources */,
 				4E083E112789A1EB009E7C7F /* HomeList.swift in Sources */,
