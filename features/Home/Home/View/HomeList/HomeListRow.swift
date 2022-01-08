@@ -5,11 +5,19 @@
 //  Created by Ahmed Naser on 07/01/2022.
 //
 
+import Common
 import SwiftUI
 
 struct HomeListRow: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image("Ahri")
+                .resizable()
+                .scaledToFit()
+                .overlay(CalloutTextView(), alignment: .bottomLeading)
+        }
+        .frame(maxHeight: 300)
+        .padding(8)
     }
 }
 

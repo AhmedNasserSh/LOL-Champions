@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E083DCB27899DFF009E7C7F /* Common.framework in Copy FrameWorks */ = {isa = PBXBuildFile; fileRef = 4E083DB427899C44009E7C7F /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4E12134E2788B8E4007591D1 /* HomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12134D2788B8E4007591D1 /* HomeApp.swift */; };
 		4E1213502788B8E4007591D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12134F2788B8E4007591D1 /* ContentView.swift */; };
 		4E1213522788B8E6007591D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E1213512788B8E6007591D1 /* Assets.xcassets */; };
@@ -15,9 +16,24 @@
 		4E1213692788B8E6007591D1 /* HomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1213682788B8E6007591D1 /* HomeUITests.swift */; };
 		4E12136B2788B8E6007591D1 /* HomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12136A2788B8E6007591D1 /* HomeUITestsLaunchTests.swift */; };
 		4E1213D82788C55E007591D1 /* HomeListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1213D72788C55E007591D1 /* HomeListRow.swift */; };
+		4E1213DB278913AE007591D1 /* HomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1213DA278913AE007591D1 /* HomeList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4E083DB327899C44009E7C7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E083DAE27899C44009E7C7F /* Common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4E083D8A27899B46009E7C7F;
+			remoteInfo = Common;
+		};
+		4E083DB527899C44009E7C7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E083DAE27899C44009E7C7F /* Common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4E083D9427899B46009E7C7F;
+			remoteInfo = CommonTests;
+		};
 		4E12135B2788B8E6007591D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4E1213422788B8E4007591D1 /* Project object */;
@@ -34,7 +50,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4E083DB727899C5D009E7C7F /* Copy FrameWorks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4E083DCB27899DFF009E7C7F /* Common.framework in Copy FrameWorks */,
+			);
+			name = "Copy FrameWorks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4E083DAE27899C44009E7C7F /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = ../../Common/Common.xcodeproj; sourceTree = "<group>"; };
 		4E12134A2788B8E4007591D1 /* Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Home.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E12134D2788B8E4007591D1 /* HomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeApp.swift; sourceTree = "<group>"; };
 		4E12134F2788B8E4007591D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +77,7 @@
 		4E1213682788B8E6007591D1 /* HomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUITests.swift; sourceTree = "<group>"; };
 		4E12136A2788B8E6007591D1 /* HomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4E1213D72788C55E007591D1 /* HomeListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListRow.swift; sourceTree = "<group>"; };
+		4E1213DA278913AE007591D1 /* HomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +105,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E083DAD27899C25009E7C7F /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				4E083DAE27899C44009E7C7F /* Common.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		4E083DAF27899C44009E7C7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E083DB427899C44009E7C7F /* Common.framework */,
+				4E083DB627899C44009E7C7F /* CommonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4E1213412788B8E4007591D1 = {
 			isa = PBXGroup;
 			children = (
 				4E12134C2788B8E4007591D1 /* Home */,
 				4E12135D2788B8E6007591D1 /* HomeTests */,
 				4E1213672788B8E6007591D1 /* HomeUITests */,
+				4E083DAD27899C25009E7C7F /* Dependencies */,
 				4E12134B2788B8E4007591D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,9 +146,8 @@
 		4E12134C2788B8E4007591D1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				4E1213D92788C569007591D1 /* HomeList */,
 				4E12134D2788B8E4007591D1 /* HomeApp.swift */,
-				4E12134F2788B8E4007591D1 /* ContentView.swift */,
+				4EE063C227898F8100D2E0F8 /* View */,
 				4E1213512788B8E6007591D1 /* Assets.xcassets */,
 				4E1213532788B8E6007591D1 /* Preview Content */,
 			);
@@ -134,8 +183,18 @@
 			isa = PBXGroup;
 			children = (
 				4E1213D72788C55E007591D1 /* HomeListRow.swift */,
+				4E1213DA278913AE007591D1 /* HomeList.swift */,
 			);
 			path = HomeList;
+			sourceTree = "<group>";
+		};
+		4EE063C227898F8100D2E0F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E12134F2788B8E4007591D1 /* ContentView.swift */,
+				4E1213D92788C569007591D1 /* HomeList */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +207,7 @@
 				4E1213462788B8E4007591D1 /* Sources */,
 				4E1213472788B8E4007591D1 /* Frameworks */,
 				4E1213482788B8E4007591D1 /* Resources */,
+				4E083DB727899C5D009E7C7F /* Copy FrameWorks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +288,12 @@
 			mainGroup = 4E1213412788B8E4007591D1;
 			productRefGroup = 4E12134B2788B8E4007591D1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4E083DAF27899C44009E7C7F /* Products */;
+					ProjectRef = 4E083DAE27899C44009E7C7F /* Common.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4E1213492788B8E4007591D1 /* Home */,
@@ -236,6 +302,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4E083DB427899C44009E7C7F /* Common.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Common.framework;
+			remoteRef = 4E083DB327899C44009E7C7F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4E083DB627899C44009E7C7F /* CommonTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CommonTests.xctest;
+			remoteRef = 4E083DB527899C44009E7C7F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4E1213482788B8E4007591D1 /* Resources */ = {
@@ -270,6 +353,7 @@
 			files = (
 				4E1213502788B8E4007591D1 /* ContentView.swift in Sources */,
 				4E1213D82788C55E007591D1 /* HomeListRow.swift in Sources */,
+				4E1213DB278913AE007591D1 /* HomeList.swift in Sources */,
 				4E12134E2788B8E4007591D1 /* HomeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
