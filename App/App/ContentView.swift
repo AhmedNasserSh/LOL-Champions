@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
+import ChampionDetails
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ChampionDetailsView()
     }
 }
 

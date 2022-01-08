@@ -11,10 +11,10 @@
       location = "container:"
       name = "features">
       <FileRef
-         location = "group:features/Home/Home.xcodeproj">
+         location = "group:ChampionDetails/ChampionDetails.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:features/HeroDetails/HeroDetails.xcodeproj">
+         location = "group:Home/Home.xcodeproj">
       </FileRef>
    </Group>
 </Workspace>
