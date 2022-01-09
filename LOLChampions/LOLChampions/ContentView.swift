@@ -12,6 +12,7 @@ struct ContentView: View {
     var body: some View {
         HomeGridView()
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
