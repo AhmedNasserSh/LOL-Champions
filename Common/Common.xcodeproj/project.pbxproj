@@ -14,6 +14,8 @@
 		4E083DAA27899B85009E7C7F /* View + CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083DA627899B85009E7C7F /* View + CornerRadius.swift */; };
 		4E083DAB27899B85009E7C7F /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083DA827899B85009E7C7F /* RoundedCorner.swift */; };
 		4E083DAC27899B85009E7C7F /* CalloutTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083DA927899B85009E7C7F /* CalloutTextView.swift */; };
+		4E295034278AE1DB00A42AE3 /* ScrollUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E295033278AE1DB00A42AE3 /* ScrollUIView.swift */; };
+		4E295036278AE20100A42AE3 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E295035278AE20100A42AE3 /* ScrollViewController.swift */; };
 		A141EAC10A94C1E8E9838C65 /* Pods_Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6028989EBEF7260938D523 /* Pods_Common.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		4E083DA627899B85009E7C7F /* View + CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View + CornerRadius.swift"; sourceTree = "<group>"; };
 		4E083DA827899B85009E7C7F /* RoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		4E083DA927899B85009E7C7F /* CalloutTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalloutTextView.swift; sourceTree = "<group>"; };
+		4E295033278AE1DB00A42AE3 /* ScrollUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollUIView.swift; sourceTree = "<group>"; };
+		4E295035278AE20100A42AE3 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		5B71C1DF59D684796E2A67ED /* Pods-Common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.debug.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.debug.xcconfig"; sourceTree = "<group>"; };
 		BA6028989EBEF7260938D523 /* Pods_Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6259BB085CF29BDB517762 /* Pods-Common.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.release.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 		4E083D8C27899B46009E7C7F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4E29504C278B045800A42AE3 /* Dependcies */,
 				4E083DA427899B85009E7C7F /* View */,
 				4E083D8D27899B46009E7C7F /* Common.h */,
 				4E083D8E27899B46009E7C7F /* Common.docc */,
@@ -129,10 +134,27 @@
 		4E083DA727899B85009E7C7F /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				4E295032278AE1CD00A42AE3 /* ScrollView */,
 				4E083DA827899B85009E7C7F /* RoundedCorner.swift */,
 				4E083DA927899B85009E7C7F /* CalloutTextView.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		4E295032278AE1CD00A42AE3 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				4E295033278AE1DB00A42AE3 /* ScrollUIView.swift */,
+				4E295035278AE20100A42AE3 /* ScrollViewController.swift */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		4E29504C278B045800A42AE3 /* Dependcies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Dependcies;
 			sourceTree = "<group>";
 		};
 		AA0A3687B103A1404870F30A /* Frameworks */ = {
@@ -298,7 +320,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E083DAC27899B85009E7C7F /* CalloutTextView.swift in Sources */,
+				4E295036278AE20100A42AE3 /* ScrollViewController.swift in Sources */,
 				4E083DAB27899B85009E7C7F /* RoundedCorner.swift in Sources */,
+				4E295034278AE1DB00A42AE3 /* ScrollUIView.swift in Sources */,
 				4E083D8F27899B46009E7C7F /* Common.docc in Sources */,
 				4E083DAA27899B85009E7C7F /* View + CornerRadius.swift in Sources */,
 			);

@@ -7,195 +7,195 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		104A39D80F7D1E90A9DB294B /* Pods_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1398C393FEA93FECD85973E0 /* Pods_Network.framework */; };
-		4E083F602789F4EA009E7C7F /* Network.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4E083F5F2789F4EA009E7C7F /* Network.docc */; };
-		4E083F662789F4EA009E7C7F /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E083F5B2789F4EA009E7C7F /* Network.framework */; };
-		4E083F6B2789F4EA009E7C7F /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083F6A2789F4EA009E7C7F /* NetworkTests.swift */; };
-		4E083F6C2789F4EA009E7C7F /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E083F5E2789F4EA009E7C7F /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E083F842789F657009E7C7F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083F832789F657009E7C7F /* Request.swift */; };
-		4E083F872789F860009E7C7F /* NetwrokServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083F862789F860009E7C7F /* NetwrokServiceType.swift */; };
-		4E083F892789F86D009E7C7F /* NetworkClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083F882789F86D009E7C7F /* NetworkClientType.swift */; };
-		4E083F8B2789F91E009E7C7F /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083F8A2789F91E009E7C7F /* NetworkClient.swift */; };
-		4E083F922789FC38009E7C7F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083F912789FC38009E7C7F /* NetworkError.swift */; };
+		4E2950AA278B079F00A42AE3 /* NetworkManger.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950A9278B079F00A42AE3 /* NetworkManger.docc */; };
+		4E2950B0278B079F00A42AE3 /* NetworkManger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2950A5278B079F00A42AE3 /* NetworkManger.framework */; };
+		4E2950B5278B079F00A42AE3 /* NetworkMangerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950B4278B079F00A42AE3 /* NetworkMangerTests.swift */; };
+		4E2950B6278B079F00A42AE3 /* NetworkManger.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E2950A8278B079F00A42AE3 /* NetworkManger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E2950D3278B086200A42AE3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950CE278B086200A42AE3 /* NetworkError.swift */; };
+		4E2950D4278B086200A42AE3 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950CF278B086200A42AE3 /* NetworkClient.swift */; };
+		4E2950D5278B086200A42AE3 /* NetwrokServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950D0278B086200A42AE3 /* NetwrokServiceType.swift */; };
+		4E2950D6278B086200A42AE3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950D1278B086200A42AE3 /* Request.swift */; };
+		4E2950D7278B086200A42AE3 /* NetworkClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950D2278B086200A42AE3 /* NetworkClientType.swift */; };
+		7EED1C8F322042A62A9043C2 /* Pods_NetworkManger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB497D313EE9A3DFC6AB7848 /* Pods_NetworkManger.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4E083F672789F4EA009E7C7F /* PBXContainerItemProxy */ = {
+		4E2950B1278B079F00A42AE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4E083F522789F4E9009E7C7F /* Project object */;
+			containerPortal = 4E29509C278B079F00A42AE3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4E083F5A2789F4EA009E7C7F;
-			remoteInfo = Network;
+			remoteGlobalIDString = 4E2950A4278B079F00A42AE3;
+			remoteInfo = NetworkManger;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1398C393FEA93FECD85973E0 /* Pods_Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2912220CBD57B9E4EDE14214 /* Pods-Network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Network.debug.xcconfig"; path = "Target Support Files/Pods-Network/Pods-Network.debug.xcconfig"; sourceTree = "<group>"; };
-		4E083F5B2789F4EA009E7C7F /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E083F5E2789F4EA009E7C7F /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
-		4E083F5F2789F4EA009E7C7F /* Network.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Network.docc; sourceTree = "<group>"; };
-		4E083F652789F4EA009E7C7F /* NetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E083F6A2789F4EA009E7C7F /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
-		4E083F832789F657009E7C7F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		4E083F862789F860009E7C7F /* NetwrokServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwrokServiceType.swift; sourceTree = "<group>"; };
-		4E083F882789F86D009E7C7F /* NetworkClientType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientType.swift; sourceTree = "<group>"; };
-		4E083F8A2789F91E009E7C7F /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
-		4E083F912789FC38009E7C7F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		5D60051CDDDA1D6542E89445 /* Pods-Network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Network.release.xcconfig"; path = "Target Support Files/Pods-Network/Pods-Network.release.xcconfig"; sourceTree = "<group>"; };
+		4E2950A5278B079F00A42AE3 /* NetworkManger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkManger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E2950A8278B079F00A42AE3 /* NetworkManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManger.h; sourceTree = "<group>"; };
+		4E2950A9278B079F00A42AE3 /* NetworkManger.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkManger.docc; sourceTree = "<group>"; };
+		4E2950AF278B079F00A42AE3 /* NetworkMangerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkMangerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E2950B4278B079F00A42AE3 /* NetworkMangerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMangerTests.swift; sourceTree = "<group>"; };
+		4E2950CE278B086200A42AE3 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		4E2950CF278B086200A42AE3 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		4E2950D0278B086200A42AE3 /* NetwrokServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetwrokServiceType.swift; sourceTree = "<group>"; };
+		4E2950D1278B086200A42AE3 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		4E2950D2278B086200A42AE3 /* NetworkClientType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientType.swift; sourceTree = "<group>"; };
+		730D922F7543ADB231D08CE9 /* Pods-NetworkManger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkManger.release.xcconfig"; path = "Target Support Files/Pods-NetworkManger/Pods-NetworkManger.release.xcconfig"; sourceTree = "<group>"; };
+		EB497D313EE9A3DFC6AB7848 /* Pods_NetworkManger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkManger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0FC1B21A67AB99624221F6 /* Pods-NetworkManger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkManger.debug.xcconfig"; path = "Target Support Files/Pods-NetworkManger/Pods-NetworkManger.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4E083F582789F4EA009E7C7F /* Frameworks */ = {
+		4E2950A2278B079F00A42AE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				104A39D80F7D1E90A9DB294B /* Pods_Network.framework in Frameworks */,
+				7EED1C8F322042A62A9043C2 /* Pods_NetworkManger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E083F622789F4EA009E7C7F /* Frameworks */ = {
+		4E2950AC278B079F00A42AE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E083F662789F4EA009E7C7F /* Network.framework in Frameworks */,
+				4E2950B0278B079F00A42AE3 /* NetworkManger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4E083F512789F4E9009E7C7F = {
+		4E29509B278B079F00A42AE3 = {
 			isa = PBXGroup;
 			children = (
-				4E083F5D2789F4EA009E7C7F /* Network */,
-				4E083F692789F4EA009E7C7F /* NetworkTests */,
-				4E083F5C2789F4EA009E7C7F /* Products */,
-				B8B5F28C66A4199549C0A611 /* Pods */,
-				A0A5C5705D69EEF5BDE89E14 /* Frameworks */,
+				4E2950A7278B079F00A42AE3 /* NetworkManger */,
+				4E2950B3278B079F00A42AE3 /* NetworkMangerTests */,
+				4E2950A6278B079F00A42AE3 /* Products */,
+				67EA5DA4F1953A2E8A575336 /* Pods */,
+				EC532510EDE26639C0DA3031 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		4E083F5C2789F4EA009E7C7F /* Products */ = {
+		4E2950A6278B079F00A42AE3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E083F5B2789F4EA009E7C7F /* Network.framework */,
-				4E083F652789F4EA009E7C7F /* NetworkTests.xctest */,
+				4E2950A5278B079F00A42AE3 /* NetworkManger.framework */,
+				4E2950AF278B079F00A42AE3 /* NetworkMangerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4E083F5D2789F4EA009E7C7F /* Network */ = {
+		4E2950A7278B079F00A42AE3 /* NetworkManger */ = {
 			isa = PBXGroup;
 			children = (
-				4E083F832789F657009E7C7F /* Request.swift */,
-				4E083F862789F860009E7C7F /* NetwrokServiceType.swift */,
-				4E083F882789F86D009E7C7F /* NetworkClientType.swift */,
-				4E083F8A2789F91E009E7C7F /* NetworkClient.swift */,
-				4E083F5E2789F4EA009E7C7F /* Network.h */,
-				4E083F5F2789F4EA009E7C7F /* Network.docc */,
-				4E083F912789FC38009E7C7F /* NetworkError.swift */,
+				4E2950CF278B086200A42AE3 /* NetworkClient.swift */,
+				4E2950D2278B086200A42AE3 /* NetworkClientType.swift */,
+				4E2950CE278B086200A42AE3 /* NetworkError.swift */,
+				4E2950D0278B086200A42AE3 /* NetwrokServiceType.swift */,
+				4E2950D1278B086200A42AE3 /* Request.swift */,
+				4E2950A8278B079F00A42AE3 /* NetworkManger.h */,
+				4E2950A9278B079F00A42AE3 /* NetworkManger.docc */,
 			);
-			path = Network;
+			path = NetworkManger;
 			sourceTree = "<group>";
 		};
-		4E083F692789F4EA009E7C7F /* NetworkTests */ = {
+		4E2950B3278B079F00A42AE3 /* NetworkMangerTests */ = {
 			isa = PBXGroup;
 			children = (
-				4E083F6A2789F4EA009E7C7F /* NetworkTests.swift */,
+				4E2950B4278B079F00A42AE3 /* NetworkMangerTests.swift */,
 			);
-			path = NetworkTests;
+			path = NetworkMangerTests;
 			sourceTree = "<group>";
 		};
-		A0A5C5705D69EEF5BDE89E14 /* Frameworks */ = {
+		67EA5DA4F1953A2E8A575336 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1398C393FEA93FECD85973E0 /* Pods_Network.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B8B5F28C66A4199549C0A611 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2912220CBD57B9E4EDE14214 /* Pods-Network.debug.xcconfig */,
-				5D60051CDDDA1D6542E89445 /* Pods-Network.release.xcconfig */,
+				FE0FC1B21A67AB99624221F6 /* Pods-NetworkManger.debug.xcconfig */,
+				730D922F7543ADB231D08CE9 /* Pods-NetworkManger.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		EC532510EDE26639C0DA3031 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB497D313EE9A3DFC6AB7848 /* Pods_NetworkManger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4E083F562789F4EA009E7C7F /* Headers */ = {
+		4E2950A0278B079F00A42AE3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E083F6C2789F4EA009E7C7F /* Network.h in Headers */,
+				4E2950B6278B079F00A42AE3 /* NetworkManger.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4E083F5A2789F4EA009E7C7F /* Network */ = {
+		4E2950A4278B079F00A42AE3 /* NetworkManger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E083F6F2789F4EA009E7C7F /* Build configuration list for PBXNativeTarget "Network" */;
+			buildConfigurationList = 4E2950B9278B079F00A42AE3 /* Build configuration list for PBXNativeTarget "NetworkManger" */;
 			buildPhases = (
-				B2BDDFF617561B5C69BDB7C8 /* [CP] Check Pods Manifest.lock */,
-				4E083F562789F4EA009E7C7F /* Headers */,
-				4E083F572789F4EA009E7C7F /* Sources */,
-				4E083F582789F4EA009E7C7F /* Frameworks */,
-				4E083F592789F4EA009E7C7F /* Resources */,
-				4E083F8C2789FAF0009E7C7F /* SwiftLint */,
+				987F8EB87FCAD0756533AC7E /* [CP] Check Pods Manifest.lock */,
+				4E2950A0278B079F00A42AE3 /* Headers */,
+				4E2950A1278B079F00A42AE3 /* Sources */,
+				4E2950A2278B079F00A42AE3 /* Frameworks */,
+				4E2950A3278B079F00A42AE3 /* Resources */,
+				4E2950C9278B07F000A42AE3 /* Swift Lint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Network;
-			productName = Network;
-			productReference = 4E083F5B2789F4EA009E7C7F /* Network.framework */;
+			name = NetworkManger;
+			productName = NetworkManger;
+			productReference = 4E2950A5278B079F00A42AE3 /* NetworkManger.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4E083F642789F4EA009E7C7F /* NetworkTests */ = {
+		4E2950AE278B079F00A42AE3 /* NetworkMangerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E083F722789F4EA009E7C7F /* Build configuration list for PBXNativeTarget "NetworkTests" */;
+			buildConfigurationList = 4E2950BC278B079F00A42AE3 /* Build configuration list for PBXNativeTarget "NetworkMangerTests" */;
 			buildPhases = (
-				4E083F612789F4EA009E7C7F /* Sources */,
-				4E083F622789F4EA009E7C7F /* Frameworks */,
-				4E083F632789F4EA009E7C7F /* Resources */,
+				4E2950AB278B079F00A42AE3 /* Sources */,
+				4E2950AC278B079F00A42AE3 /* Frameworks */,
+				4E2950AD278B079F00A42AE3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4E083F682789F4EA009E7C7F /* PBXTargetDependency */,
+				4E2950B2278B079F00A42AE3 /* PBXTargetDependency */,
 			);
-			name = NetworkTests;
-			productName = NetworkTests;
-			productReference = 4E083F652789F4EA009E7C7F /* NetworkTests.xctest */;
+			name = NetworkMangerTests;
+			productName = NetworkMangerTests;
+			productReference = 4E2950AF278B079F00A42AE3 /* NetworkMangerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4E083F522789F4E9009E7C7F /* Project object */ = {
+		4E29509C278B079F00A42AE3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					4E083F5A2789F4EA009E7C7F = {
+					4E2950A4278B079F00A42AE3 = {
 						CreatedOnToolsVersion = 13.1;
 					};
-					4E083F642789F4EA009E7C7F = {
+					4E2950AE278B079F00A42AE3 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = 4E083F552789F4E9009E7C7F /* Build configuration list for PBXProject "Network" */;
+			buildConfigurationList = 4E29509F278B079F00A42AE3 /* Build configuration list for PBXProject "NetworkManger" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -203,26 +203,26 @@
 				en,
 				Base,
 			);
-			mainGroup = 4E083F512789F4E9009E7C7F;
-			productRefGroup = 4E083F5C2789F4EA009E7C7F /* Products */;
+			mainGroup = 4E29509B278B079F00A42AE3;
+			productRefGroup = 4E2950A6278B079F00A42AE3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4E083F5A2789F4EA009E7C7F /* Network */,
-				4E083F642789F4EA009E7C7F /* NetworkTests */,
+				4E2950A4278B079F00A42AE3 /* NetworkManger */,
+				4E2950AE278B079F00A42AE3 /* NetworkMangerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4E083F592789F4EA009E7C7F /* Resources */ = {
+		4E2950A3278B079F00A42AE3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E083F632789F4EA009E7C7F /* Resources */ = {
+		4E2950AD278B079F00A42AE3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,7 +232,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4E083F8C2789FAF0009E7C7F /* SwiftLint */ = {
+		4E2950C9278B07F000A42AE3 /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -241,7 +241,7 @@
 			);
 			inputPaths = (
 			);
-			name = SwiftLint;
+			name = "Swift Lint";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -250,7 +250,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
-		B2BDDFF617561B5C69BDB7C8 /* [CP] Check Pods Manifest.lock */ = {
+		987F8EB87FCAD0756533AC7E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,7 +265,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Network-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-NetworkManger-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -275,39 +275,39 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4E083F572789F4EA009E7C7F /* Sources */ = {
+		4E2950A1278B079F00A42AE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E083F602789F4EA009E7C7F /* Network.docc in Sources */,
-				4E083F8B2789F91E009E7C7F /* NetworkClient.swift in Sources */,
-				4E083F842789F657009E7C7F /* Request.swift in Sources */,
-				4E083F922789FC38009E7C7F /* NetworkError.swift in Sources */,
-				4E083F872789F860009E7C7F /* NetwrokServiceType.swift in Sources */,
-				4E083F892789F86D009E7C7F /* NetworkClientType.swift in Sources */,
+				4E2950D5278B086200A42AE3 /* NetwrokServiceType.swift in Sources */,
+				4E2950AA278B079F00A42AE3 /* NetworkManger.docc in Sources */,
+				4E2950D6278B086200A42AE3 /* Request.swift in Sources */,
+				4E2950D7278B086200A42AE3 /* NetworkClientType.swift in Sources */,
+				4E2950D3278B086200A42AE3 /* NetworkError.swift in Sources */,
+				4E2950D4278B086200A42AE3 /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E083F612789F4EA009E7C7F /* Sources */ = {
+		4E2950AB278B079F00A42AE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E083F6B2789F4EA009E7C7F /* NetworkTests.swift in Sources */,
+				4E2950B5278B079F00A42AE3 /* NetworkMangerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4E083F682789F4EA009E7C7F /* PBXTargetDependency */ = {
+		4E2950B2278B079F00A42AE3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4E083F5A2789F4EA009E7C7F /* Network */;
-			targetProxy = 4E083F672789F4EA009E7C7F /* PBXContainerItemProxy */;
+			target = 4E2950A4278B079F00A42AE3 /* NetworkManger */;
+			targetProxy = 4E2950B1278B079F00A42AE3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4E083F6D2789F4EA009E7C7F /* Debug */ = {
+		4E2950B7278B079F00A42AE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -371,7 +371,7 @@
 			};
 			name = Debug;
 		};
-		4E083F6E2789F4EA009E7C7F /* Release */ = {
+		4E2950B8278B079F00A42AE3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -429,9 +429,9 @@
 			};
 			name = Release;
 		};
-		4E083F702789F4EA009E7C7F /* Debug */ = {
+		4E2950BA278B079F00A42AE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2912220CBD57B9E4EDE14214 /* Pods-Network.debug.xcconfig */;
+			baseConfigurationReference = FE0FC1B21A67AB99624221F6 /* Pods-NetworkManger.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -449,7 +449,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.marvel.heros.www.Network;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lol.champions.www.NetworkManger;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -458,9 +458,9 @@
 			};
 			name = Debug;
 		};
-		4E083F712789F4EA009E7C7F /* Release */ = {
+		4E2950BB278B079F00A42AE3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D60051CDDDA1D6542E89445 /* Pods-Network.release.xcconfig */;
+			baseConfigurationReference = 730D922F7543ADB231D08CE9 /* Pods-NetworkManger.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -478,7 +478,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.marvel.heros.www.Network;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lol.champions.www.NetworkManger;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -487,7 +487,7 @@
 			};
 			name = Release;
 		};
-		4E083F732789F4EA009E7C7F /* Debug */ = {
+		4E2950BD278B079F00A42AE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -501,7 +501,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.marvel.heros.www.NetworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lol.champions.www.NetworkMangerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -509,7 +509,7 @@
 			};
 			name = Debug;
 		};
-		4E083F742789F4EA009E7C7F /* Release */ = {
+		4E2950BE278B079F00A42AE3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -523,7 +523,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.marvel.heros.www.NetworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lol.champions.www.NetworkMangerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -534,34 +534,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4E083F552789F4E9009E7C7F /* Build configuration list for PBXProject "Network" */ = {
+		4E29509F278B079F00A42AE3 /* Build configuration list for PBXProject "NetworkManger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4E083F6D2789F4EA009E7C7F /* Debug */,
-				4E083F6E2789F4EA009E7C7F /* Release */,
+				4E2950B7278B079F00A42AE3 /* Debug */,
+				4E2950B8278B079F00A42AE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E083F6F2789F4EA009E7C7F /* Build configuration list for PBXNativeTarget "Network" */ = {
+		4E2950B9278B079F00A42AE3 /* Build configuration list for PBXNativeTarget "NetworkManger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4E083F702789F4EA009E7C7F /* Debug */,
-				4E083F712789F4EA009E7C7F /* Release */,
+				4E2950BA278B079F00A42AE3 /* Debug */,
+				4E2950BB278B079F00A42AE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E083F722789F4EA009E7C7F /* Build configuration list for PBXNativeTarget "NetworkTests" */ = {
+		4E2950BC278B079F00A42AE3 /* Build configuration list for PBXNativeTarget "NetworkMangerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4E083F732789F4EA009E7C7F /* Debug */,
-				4E083F742789F4EA009E7C7F /* Release */,
+				4E2950BD278B079F00A42AE3 /* Debug */,
+				4E2950BE278B079F00A42AE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4E083F522789F4E9009E7C7F /* Project object */;
+	rootObject = 4E29509C278B079F00A42AE3 /* Project object */;
 }

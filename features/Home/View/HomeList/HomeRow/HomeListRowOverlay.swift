@@ -6,15 +6,25 @@
 //
 
 import SwiftUI
+import Common
 
 struct HomeListRowOverlay: View {
+    let text: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(text)
+            .font(.title)
+            .frame(maxWidth: .infinity)
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.black)
+            .opacity(0.7)
+            .cornerRadius(20, corners: [.bottomLeft, .bottomRight])
     }
 }
 
 struct HomeListRowOverlay_Previews: PreviewProvider {
     static var previews: some View {
-        HomeListRowOverlay()
+        HomeListRowOverlay(text: "Ahari")
     }
 }

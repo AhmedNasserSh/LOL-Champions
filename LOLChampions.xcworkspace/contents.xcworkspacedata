@@ -8,7 +8,7 @@
       location = "group:LOLChampions/LOLChampions.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Network/Network.xcodeproj">
+      location = "group:NetworkManger/NetworkManger.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Common/Common.xcodeproj">

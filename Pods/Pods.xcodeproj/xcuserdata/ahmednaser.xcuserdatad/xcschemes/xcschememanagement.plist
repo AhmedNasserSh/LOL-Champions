@@ -32,7 +32,7 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>Pods-Network.xcscheme</key>
+		<key>Pods-NetworkManger.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

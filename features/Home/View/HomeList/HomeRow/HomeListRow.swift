@@ -15,19 +15,8 @@ struct HomeListRow: View {
                 .resizable()
                 .cornerRadius(20)
                 .scaledToFit()
-                .overlay(HStack {
-                    Text("Ahari")
-                        .font(.title)
-                        .frame(maxWidth: .infinity)
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color.black)
-                        .opacity(0.7)
-                        .cornerRadius(20)
-                }.cornerRadius(10, corners: [.topLeft, .bottomRight])
-                         
-                         
-                         , alignment: .bottom)
+                .overlay(HomeListRowOverlay(text: "Annie") ,
+                         alignment: .bottom)
                 .rotation3DEffect(.degrees(5), axis: (x: 0, y: 1, z: 0))
                 .padding()
         }

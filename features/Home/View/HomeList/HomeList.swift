@@ -6,29 +6,24 @@
 //
 
 import SwiftUI
+import Common
 
 struct HomeList: View {
-    @State var images = ["1", "2", "3", "4"]
-    var items: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
-
+    @State var images = ["1", "2", "3", "4", "6", "7"]
+    var items: [GridItem] = Array(repeating: .init(.flexible()),
+                                  count: 3)
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false) {
-            VStack {
-                Text("Pick your Champion")
-                    .font(.largeTitle)
-                    .padding(6)
-                    .foregroundColor(.white)
-            }
-            .frame(height: 50)
-            .padding()
-
-            LazyVGrid(columns: items, spacing: 0) {
-                ForEach(images, id: \.self) { _ in
-                    HomeListRow()
+        GeometryReader { gemotery in
+            ScrollViewUI(hideScrollIndicators: true) {
+                LazyHStack(alignment: .center) {
+                    ForEach(images, id: \.self) { _ in
+                        HomeListRow()
+                            .frame(width: gemotery.size.width - 5, alignment: .center)
+                    }
                 }
             }
+            .edgesIgnoringSafeArea(.bottom)
         }
-
     }
 }
 

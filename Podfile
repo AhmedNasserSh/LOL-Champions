@@ -16,8 +16,8 @@ project 'Common/Common.project'
 app_pods
 end
 
-target 'Network' do
-project 'Network/Network.project'
+target 'NetworkManger' do
+project 'NetworkManger/NetworkManger.project'
 app_pods
 end
 

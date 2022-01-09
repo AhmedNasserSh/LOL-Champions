@@ -10,12 +10,17 @@ import SwiftUI
 public struct HomeGridView: View {
     public init() {}
     public var body: some View {
-        ZStack {
-            Image(imageName: "background")
-                .resizable()
+        VStack {
+            HomeHeader()
             HomeList()
         }
-        .background(.black)
+        .background(
+            Image(imageName: "background")
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        )
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 

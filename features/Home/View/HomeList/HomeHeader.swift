@@ -9,7 +9,15 @@ import SwiftUI
 
 struct HomeHeader: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Spacer()
+            Image(imageName: "logo")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame( height: 50)
+        }
+        .padding()
+        .frame(height: 20)
     }
 }
 

@@ -16,6 +16,11 @@
 		4E083F322789B897009E7C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E083F312789B897009E7C7F /* Assets.xcassets */; };
 		4E083F352789B9B5009E7C7F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083F342789B9B5009E7C7F /* Constants.swift */; };
 		4E083F382789BA8A009E7C7F /* Image + bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083F372789BA8A009E7C7F /* Image + bundle.swift */; };
+		4E29502E278ACE9300A42AE3 /* Home.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4E29502C278ACE9300A42AE3 /* Home.docc */; };
+		4E29502F278ACF1900A42AE3 /* Home.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E29502B278ACE9300A42AE3 /* Home.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E295031278AD35B00A42AE3 /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E295030278AD35B00A42AE3 /* HomeHeader.swift */; };
+		4E295039278AE90100A42AE3 /* HomeListRowOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E295038278AE90100A42AE3 /* HomeListRowOverlay.swift */; };
+		4E2950C8278B07BA00A42AE3 /* NetworkManger.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2950C5278B07AF00A42AE3 /* NetworkManger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7218CAA3358D3610DB0F3DD8 /* Pods_Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4781D816C4744B1E1C8B9589 /* Pods_Home.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +46,20 @@
 			remoteGlobalIDString = 4E083D9427899B46009E7C7F;
 			remoteInfo = CommonTests;
 		};
+		4E2950C4278B07AF00A42AE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E2950BF278B07AF00A42AE3 /* NetworkManger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4E2950A5278B079F00A42AE3;
+			remoteInfo = NetworkManger;
+		};
+		4E2950C6278B07AF00A42AE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E2950BF278B07AF00A42AE3 /* NetworkManger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4E2950AF278B079F00A42AE3;
+			remoteInfo = NetworkMangerTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +69,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4E2950C8278B07BA00A42AE3 /* NetworkManger.framework in Copy Frameworks */,
 				4E083EC52789AFA1009E7C7F /* Common.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
@@ -66,11 +86,14 @@
 		4E083E0D2789A1EB009E7C7F /* HomeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeList.swift; sourceTree = "<group>"; };
 		4E083E292789A2C7009E7C7F /* HomeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGridView.swift; sourceTree = "<group>"; };
 		4E083EBC2789AF8B009E7C7F /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = ../../Common/Common.xcodeproj; sourceTree = "<group>"; };
-		4E083EDA2789B026009E7C7F /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
-		4E083EDB2789B026009E7C7F /* Home.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Home.md; sourceTree = "<group>"; };
 		4E083F312789B897009E7C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E083F342789B9B5009E7C7F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4E083F372789BA8A009E7C7F /* Image + bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image + bundle.swift"; sourceTree = "<group>"; };
+		4E29502B278ACE9300A42AE3 /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		4E29502C278ACE9300A42AE3 /* Home.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Home.docc; sourceTree = "<group>"; };
+		4E295030278AD35B00A42AE3 /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
+		4E295038278AE90100A42AE3 /* HomeListRowOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListRowOverlay.swift; sourceTree = "<group>"; };
+		4E2950BF278B07AF00A42AE3 /* NetworkManger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkManger.xcodeproj; path = ../../NetworkManger/NetworkManger.xcodeproj; sourceTree = "<group>"; };
 		69D74C7CE7B3EFB44222E840 /* Pods-Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home.release.xcconfig"; path = "Target Support Files/Pods-Home/Pods-Home.release.xcconfig"; sourceTree = "<group>"; };
 		7700BF331C43DBD4E25A0543 /* Pods-Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home.debug.xcconfig"; path = "Target Support Files/Pods-Home/Pods-Home.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,11 +121,11 @@
 		4E083DDB2789A19B009E7C7F = {
 			isa = PBXGroup;
 			children = (
-				4E083F332789B9A4009E7C7F /* main */,
+				4E295044278B01E100A42AE3 /* Domain */,
+				4E29502A278ACE9300A42AE3 /* Headers */,
+				4E083F332789B9A4009E7C7F /* Base */,
 				4E083F312789B897009E7C7F /* Assets.xcassets */,
 				4E083E092789A1EB009E7C7F /* View */,
-				4E083EDF2789B13D009E7C7F /* resources */,
-				4E083EDD2789B026009E7C7F /* Headers */,
 				4E083E132789A1F9009E7C7F /* Dependencies */,
 				4E083DF32789A19B009E7C7F /* HomeTests */,
 				4E083DE62789A19B009E7C7F /* Products */,
@@ -141,7 +164,8 @@
 		4E083E0B2789A1EB009E7C7F /* HomeList */ = {
 			isa = PBXGroup;
 			children = (
-				4E083E0C2789A1EB009E7C7F /* HomeListRow.swift */,
+				4E295037278AE8E800A42AE3 /* HomeRow */,
+				4E295030278AD35B00A42AE3 /* HomeHeader.swift */,
 				4E083E0D2789A1EB009E7C7F /* HomeList.swift */,
 			);
 			path = HomeList;
@@ -150,6 +174,7 @@
 		4E083E132789A1F9009E7C7F /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				4E2950BF278B07AF00A42AE3 /* NetworkManger.xcodeproj */,
 				4E083EBC2789AF8B009E7C7F /* Common.xcodeproj */,
 			);
 			name = Dependencies;
@@ -164,37 +189,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4E083EDC2789B026009E7C7F /* Home.docc */ = {
-			isa = PBXGroup;
-			children = (
-				4E083EDB2789B026009E7C7F /* Home.md */,
-			);
-			path = Home.docc;
-			sourceTree = "<group>";
-		};
-		4E083EDD2789B026009E7C7F /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				4E083EDA2789B026009E7C7F /* Home.h */,
-				4E083EDC2789B026009E7C7F /* Home.docc */,
-			);
-			name = Headers;
-			path = "/Users/ahmednaser/Desktop/PlayProjects/LOL Champions/features/Home/Headers";
-			sourceTree = "<absolute>";
-		};
-		4E083EDF2789B13D009E7C7F /* resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = resources;
-			sourceTree = "<group>";
-		};
-		4E083F332789B9A4009E7C7F /* main */ = {
+		4E083F332789B9A4009E7C7F /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				4E083F342789B9B5009E7C7F /* Constants.swift */,
 			);
-			path = main;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		4E083F362789BA79009E7C7F /* extenions */ = {
@@ -203,6 +203,40 @@
 				4E083F372789BA8A009E7C7F /* Image + bundle.swift */,
 			);
 			path = extenions;
+			sourceTree = "<group>";
+		};
+		4E29502A278ACE9300A42AE3 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				4E29502B278ACE9300A42AE3 /* Home.h */,
+				4E29502C278ACE9300A42AE3 /* Home.docc */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		4E295037278AE8E800A42AE3 /* HomeRow */ = {
+			isa = PBXGroup;
+			children = (
+				4E083E0C2789A1EB009E7C7F /* HomeListRow.swift */,
+				4E295038278AE90100A42AE3 /* HomeListRowOverlay.swift */,
+			);
+			path = HomeRow;
+			sourceTree = "<group>";
+		};
+		4E295044278B01E100A42AE3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4E2950C0278B07AF00A42AE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E2950C5278B07AF00A42AE3 /* NetworkManger.framework */,
+				4E2950C7278B07AF00A42AE3 /* NetworkMangerTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		5927C5C9B8DD75ACAA83A6A8 /* Frameworks */ = {
@@ -230,6 +264,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E29502F278ACF1900A42AE3 /* Home.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +344,10 @@
 					ProductGroup = 4E083EBD2789AF8B009E7C7F /* Products */;
 					ProjectRef = 4E083EBC2789AF8B009E7C7F /* Common.xcodeproj */;
 				},
+				{
+					ProductGroup = 4E2950C0278B07AF00A42AE3 /* Products */;
+					ProjectRef = 4E2950BF278B07AF00A42AE3 /* NetworkManger.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -331,6 +370,20 @@
 			fileType = wrapper.cfbundle;
 			path = CommonTests.xctest;
 			remoteRef = 4E083EC32789AF8B009E7C7F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4E2950C5278B07AF00A42AE3 /* NetworkManger.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NetworkManger.framework;
+			remoteRef = 4E2950C4278B07AF00A42AE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4E2950C7278B07AF00A42AE3 /* NetworkMangerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NetworkMangerTests.xctest;
+			remoteRef = 4E2950C6278B07AF00A42AE3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -403,9 +456,12 @@
 			files = (
 				4E083F382789BA8A009E7C7F /* Image + bundle.swift in Sources */,
 				4E083E2A2789A2C7009E7C7F /* HomeGridView.swift in Sources */,
+				4E295039278AE90100A42AE3 /* HomeListRowOverlay.swift in Sources */,
 				4E083E102789A1EB009E7C7F /* HomeListRow.swift in Sources */,
 				4E083E112789A1EB009E7C7F /* HomeList.swift in Sources */,
+				4E295031278AD35B00A42AE3 /* HomeHeader.swift in Sources */,
 				4E083F352789B9B5009E7C7F /* Constants.swift in Sources */,
+				4E29502E278ACE9300A42AE3 /* Home.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
