@@ -21,6 +21,9 @@
 		4E295031278AD35B00A42AE3 /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E295030278AD35B00A42AE3 /* HomeHeader.swift */; };
 		4E295039278AE90100A42AE3 /* HomeListRowOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E295038278AE90100A42AE3 /* HomeListRowOverlay.swift */; };
 		4E2950C8278B07BA00A42AE3 /* NetworkManger.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2950C5278B07AF00A42AE3 /* NetworkManger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4E2950E0278B0C9700A42AE3 /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950DF278B0C9700A42AE3 /* Champion.swift */; };
+		4E2950E3278B149200A42AE3 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950E2278B149200A42AE3 /* ImageDownloader.swift */; };
+		4E2950E5278B181600A42AE3 /* ImageDownloadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950E4278B181600A42AE3 /* ImageDownloadError.swift */; };
 		7218CAA3358D3610DB0F3DD8 /* Pods_Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4781D816C4744B1E1C8B9589 /* Pods_Home.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +97,9 @@
 		4E295030278AD35B00A42AE3 /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
 		4E295038278AE90100A42AE3 /* HomeListRowOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListRowOverlay.swift; sourceTree = "<group>"; };
 		4E2950BF278B07AF00A42AE3 /* NetworkManger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkManger.xcodeproj; path = ../../NetworkManger/NetworkManger.xcodeproj; sourceTree = "<group>"; };
+		4E2950DF278B0C9700A42AE3 /* Champion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
+		4E2950E2278B149200A42AE3 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		4E2950E4278B181600A42AE3 /* ImageDownloadError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadError.swift; sourceTree = "<group>"; };
 		69D74C7CE7B3EFB44222E840 /* Pods-Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home.release.xcconfig"; path = "Target Support Files/Pods-Home/Pods-Home.release.xcconfig"; sourceTree = "<group>"; };
 		7700BF331C43DBD4E25A0543 /* Pods-Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home.debug.xcconfig"; path = "Target Support Files/Pods-Home/Pods-Home.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,11 +127,12 @@
 		4E083DDB2789A19B009E7C7F = {
 			isa = PBXGroup;
 			children = (
-				4E295044278B01E100A42AE3 /* Domain */,
-				4E29502A278ACE9300A42AE3 /* Headers */,
+				4E2950E1278B147900A42AE3 /* Service */,
 				4E083F332789B9A4009E7C7F /* Base */,
+				4E295044278B01E100A42AE3 /* Domain */,
 				4E083F312789B897009E7C7F /* Assets.xcassets */,
 				4E083E092789A1EB009E7C7F /* View */,
+				4E29502A278ACE9300A42AE3 /* Headers */,
 				4E083E132789A1F9009E7C7F /* Dependencies */,
 				4E083DF32789A19B009E7C7F /* HomeTests */,
 				4E083DE62789A19B009E7C7F /* Products */,
@@ -226,6 +233,8 @@
 		4E295044278B01E100A42AE3 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				4E2950DA278B0C8400A42AE3 /* Champion */,
+				4E2950E4278B181600A42AE3 /* ImageDownloadError.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -237,6 +246,22 @@
 				4E2950C7278B07AF00A42AE3 /* NetworkMangerTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4E2950DA278B0C8400A42AE3 /* Champion */ = {
+			isa = PBXGroup;
+			children = (
+				4E2950DF278B0C9700A42AE3 /* Champion.swift */,
+			);
+			path = Champion;
+			sourceTree = "<group>";
+		};
+		4E2950E1278B147900A42AE3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4E2950E2278B149200A42AE3 /* ImageDownloader.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		5927C5C9B8DD75ACAA83A6A8 /* Frameworks */ = {
@@ -454,14 +479,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E2950E5278B181600A42AE3 /* ImageDownloadError.swift in Sources */,
 				4E083F382789BA8A009E7C7F /* Image + bundle.swift in Sources */,
 				4E083E2A2789A2C7009E7C7F /* HomeGridView.swift in Sources */,
 				4E295039278AE90100A42AE3 /* HomeListRowOverlay.swift in Sources */,
+				4E2950E3278B149200A42AE3 /* ImageDownloader.swift in Sources */,
 				4E083E102789A1EB009E7C7F /* HomeListRow.swift in Sources */,
 				4E083E112789A1EB009E7C7F /* HomeList.swift in Sources */,
 				4E295031278AD35B00A42AE3 /* HomeHeader.swift in Sources */,
 				4E083F352789B9B5009E7C7F /* Constants.swift in Sources */,
 				4E29502E278ACE9300A42AE3 /* Home.docc in Sources */,
+				4E2950E0278B0C9700A42AE3 /* Champion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

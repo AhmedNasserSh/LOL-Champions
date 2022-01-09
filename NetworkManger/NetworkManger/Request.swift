@@ -9,13 +9,13 @@ import Foundation
 
 public struct Request<Output> {
     private let url: URL
-    let parse: (Data) -> Output?
+    public let parse: (Data) throws -> Output?
     
     public var request: URLRequest {
         return URLRequest(url: url)
     }
     
-    init(url: URL, parse: @escaping (Data) -> Output?) {
+    public init(url: URL, parse: @escaping (Data) throws -> Output?) {
         self.url = url
         self.parse = parse
     }

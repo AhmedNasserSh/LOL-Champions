@@ -98,7 +98,6 @@
 		4E083D8C27899B46009E7C7F /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				4E29504C278B045800A42AE3 /* Dependcies */,
 				4E083DA427899B85009E7C7F /* View */,
 				4E083D8D27899B46009E7C7F /* Common.h */,
 				4E083D8E27899B46009E7C7F /* Common.docc */,
@@ -148,13 +147,6 @@
 				4E295035278AE20100A42AE3 /* ScrollViewController.swift */,
 			);
 			path = ScrollView;
-			sourceTree = "<group>";
-		};
-		4E29504C278B045800A42AE3 /* Dependcies */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Dependcies;
 			sourceTree = "<group>";
 		};
 		AA0A3687B103A1404870F30A /* Frameworks */ = {

@@ -8,4 +8,8 @@
 import Foundation
 public enum Constants: String {
     case bundleID = "com.marvel.heros.www.Home"
+    
+    enum Network: String {
+        case championImage = "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/"
+    }
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+@MainActor
 public protocol NetworkClientType {
     func makeRequest<Output>(_ request: Request<Output>) async throws -> Output
 }

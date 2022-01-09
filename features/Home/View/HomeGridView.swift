@@ -8,11 +8,12 @@
 import SwiftUI
 
 public struct HomeGridView: View {
+    
     public init() {}
     public var body: some View {
         VStack {
             HomeHeader()
-            HomeList()
+           // HomeList()
         }
         .background(
             Image(imageName: "background")

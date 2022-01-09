@@ -13,7 +13,7 @@ public class NetworkClient: NetworkClientType {
         guard (response as? HTTPURLResponse)?.statusCode == StatusCode.accepted.rawValue else {
             throw NetworkError.server
         }
-        guard let model = request.parse(data) else {
+        guard let model = try? request.parse(data) else {
             throw NetworkError.parse
         }
         return model
