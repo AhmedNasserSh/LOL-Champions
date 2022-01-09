@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kisspng-league-of-legends-world-championship-electronic-sp-lol-surprise-5b369a642f1d92.993132331530305124193@1x.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kisspng-league-of-legends-world-championship-electronic-sp-lol-surprise-5b369a642f1d92.993132331530305124193@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kisspng-league-of-legends-world-championship-electronic-sp-lol-surprise-5b369a642f1d92.993132331530305124193@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
