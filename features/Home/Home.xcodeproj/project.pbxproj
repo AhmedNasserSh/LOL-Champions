@@ -22,9 +22,17 @@
 		4E295039278AE90100A42AE3 /* HomeListRowOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E295038278AE90100A42AE3 /* HomeListRowOverlay.swift */; };
 		4E2950C8278B07BA00A42AE3 /* NetworkManger.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2950C5278B07AF00A42AE3 /* NetworkManger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4E2950E0278B0C9700A42AE3 /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950DF278B0C9700A42AE3 /* Champion.swift */; };
-		4E2950E3278B149200A42AE3 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950E2278B149200A42AE3 /* ImageDownloader.swift */; };
+		4E2950E3278B149200A42AE3 /* ImageDownloaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950E2278B149200A42AE3 /* ImageDownloaderService.swift */; };
 		4E2950E5278B181600A42AE3 /* ImageDownloadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950E4278B181600A42AE3 /* ImageDownloadError.swift */; };
-		7218CAA3358D3610DB0F3DD8 /* Pods_Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4781D816C4744B1E1C8B9589 /* Pods_Home.framework */; };
+		4E7A7DF7278E59DE00BEF94D /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A7DF6278E59DE00BEF94D /* Container.swift */; };
+		4EDF3D81278D8A0B00A45CE4 /* ImageDownloaderRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D80278D8A0B00A45CE4 /* ImageDownloaderRepo.swift */; };
+		4EDF3D84278D8BAB00A45CE4 /* ImageDownloaderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D83278D8BAB00A45CE4 /* ImageDownloaderUseCase.swift */; };
+		4EDF3D87278D8C4900A45CE4 /* ChampionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D86278D8C4900A45CE4 /* ChampionsService.swift */; };
+		4EDF3D8A278D90DA00A45CE4 /* ChampionDownloadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D89278D90DA00A45CE4 /* ChampionDownloadError.swift */; };
+		4EDF3D8C278D91E000A45CE4 /* ChampionsRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D8B278D91E000A45CE4 /* ChampionsRepo.swift */; };
+		4EDF3D8E278D923D00A45CE4 /* ChampionsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D8D278D923D00A45CE4 /* ChampionsUseCase.swift */; };
+		4EDF3D90278D960200A45CE4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D8F278D960200A45CE4 /* HomeViewModel.swift */; };
+		99BB64712EBEE7B9AC54226C /* Pods_Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B793C755E5FCA1B7EBB7B822 /* Pods_Home.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +89,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4781D816C4744B1E1C8B9589 /* Pods_Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ED9F0C8E8FA39B58FB7A43A /* Pods-LOLChampionsApp-Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampionsApp-Home.release.xcconfig"; path = "Target Support Files/Pods-LOLChampionsApp-Home/Pods-LOLChampionsApp-Home.release.xcconfig"; sourceTree = "<group>"; };
 		4E083DE52789A19B009E7C7F /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E083DEF2789A19B009E7C7F /* HomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E083DF42789A19B009E7C7F /* HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
@@ -98,10 +106,22 @@
 		4E295038278AE90100A42AE3 /* HomeListRowOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListRowOverlay.swift; sourceTree = "<group>"; };
 		4E2950BF278B07AF00A42AE3 /* NetworkManger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkManger.xcodeproj; path = ../../NetworkManger/NetworkManger.xcodeproj; sourceTree = "<group>"; };
 		4E2950DF278B0C9700A42AE3 /* Champion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
-		4E2950E2278B149200A42AE3 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		4E2950E2278B149200A42AE3 /* ImageDownloaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderService.swift; sourceTree = "<group>"; };
 		4E2950E4278B181600A42AE3 /* ImageDownloadError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadError.swift; sourceTree = "<group>"; };
+		4E7A7DF6278E59DE00BEF94D /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		4EDF3D80278D8A0B00A45CE4 /* ImageDownloaderRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderRepo.swift; sourceTree = "<group>"; };
+		4EDF3D83278D8BAB00A45CE4 /* ImageDownloaderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderUseCase.swift; sourceTree = "<group>"; };
+		4EDF3D86278D8C4900A45CE4 /* ChampionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsService.swift; sourceTree = "<group>"; };
+		4EDF3D89278D90DA00A45CE4 /* ChampionDownloadError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDownloadError.swift; sourceTree = "<group>"; };
+		4EDF3D8B278D91E000A45CE4 /* ChampionsRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsRepo.swift; sourceTree = "<group>"; };
+		4EDF3D8D278D923D00A45CE4 /* ChampionsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsUseCase.swift; sourceTree = "<group>"; };
+		4EDF3D8F278D960200A45CE4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		6769350573A8F3860AED7543 /* Pods-LOLChampionsApp-Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampionsApp-Home.debug.xcconfig"; path = "Target Support Files/Pods-LOLChampionsApp-Home/Pods-LOLChampionsApp-Home.debug.xcconfig"; sourceTree = "<group>"; };
 		69D74C7CE7B3EFB44222E840 /* Pods-Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home.release.xcconfig"; path = "Target Support Files/Pods-Home/Pods-Home.release.xcconfig"; sourceTree = "<group>"; };
 		7700BF331C43DBD4E25A0543 /* Pods-Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home.debug.xcconfig"; path = "Target Support Files/Pods-Home/Pods-Home.debug.xcconfig"; sourceTree = "<group>"; };
+		AE9393C1014F53204E576F5E /* Pods-LOLChampions-Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampions-Home.debug.xcconfig"; path = "Target Support Files/Pods-LOLChampions-Home/Pods-LOLChampions-Home.debug.xcconfig"; sourceTree = "<group>"; };
+		B793C755E5FCA1B7EBB7B822 /* Pods_Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD804B35924C138A2AE6FCCD /* Pods-LOLChampions-Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampions-Home.release.xcconfig"; path = "Target Support Files/Pods-LOLChampions-Home/Pods-LOLChampions-Home.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7218CAA3358D3610DB0F3DD8 /* Pods_Home.framework in Frameworks */,
+				99BB64712EBEE7B9AC54226C /* Pods_Home.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,12 +147,14 @@
 		4E083DDB2789A19B009E7C7F = {
 			isa = PBXGroup;
 			children = (
-				4E2950E1278B147900A42AE3 /* Service */,
 				4E083F332789B9A4009E7C7F /* Base */,
 				4E295044278B01E100A42AE3 /* Domain */,
-				4E083F312789B897009E7C7F /* Assets.xcassets */,
+				4E2950E1278B147900A42AE3 /* Service */,
+				4EDF3D7F278D89E900A45CE4 /* Repo */,
+				4EDF3D82278D8B9800A45CE4 /* UseCase */,
+				4EDF3D85278D8C2200A45CE4 /* ViewModel */,
+				4E7A7DD3278DF6A100BEF94D /* DI */,
 				4E083E092789A1EB009E7C7F /* View */,
-				4E29502A278ACE9300A42AE3 /* Headers */,
 				4E083E132789A1F9009E7C7F /* Dependencies */,
 				4E083DF32789A19B009E7C7F /* HomeTests */,
 				4E083DE62789A19B009E7C7F /* Products */,
@@ -199,6 +221,8 @@
 		4E083F332789B9A4009E7C7F /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				4E29502A278ACE9300A42AE3 /* Headers */,
+				4E083F312789B897009E7C7F /* Assets.xcassets */,
 				4E083F342789B9B5009E7C7F /* Constants.swift */,
 			);
 			path = Base;
@@ -233,8 +257,8 @@
 		4E295044278B01E100A42AE3 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				4EDF3D88278D90C900A45CE4 /* Error */,
 				4E2950DA278B0C8400A42AE3 /* Champion */,
-				4E2950E4278B181600A42AE3 /* ImageDownloadError.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -259,15 +283,59 @@
 		4E2950E1278B147900A42AE3 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				4E2950E2278B149200A42AE3 /* ImageDownloader.swift */,
+				4E2950E2278B149200A42AE3 /* ImageDownloaderService.swift */,
+				4EDF3D86278D8C4900A45CE4 /* ChampionsService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		4E7A7DD3278DF6A100BEF94D /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				4E7A7DF6278E59DE00BEF94D /* Container.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		4EDF3D7F278D89E900A45CE4 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				4EDF3D80278D8A0B00A45CE4 /* ImageDownloaderRepo.swift */,
+				4EDF3D8B278D91E000A45CE4 /* ChampionsRepo.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		4EDF3D82278D8B9800A45CE4 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				4EDF3D83278D8BAB00A45CE4 /* ImageDownloaderUseCase.swift */,
+				4EDF3D8D278D923D00A45CE4 /* ChampionsUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		4EDF3D85278D8C2200A45CE4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EDF3D8F278D960200A45CE4 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4EDF3D88278D90C900A45CE4 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				4E2950E4278B181600A42AE3 /* ImageDownloadError.swift */,
+				4EDF3D89278D90DA00A45CE4 /* ChampionDownloadError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 		5927C5C9B8DD75ACAA83A6A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4781D816C4744B1E1C8B9589 /* Pods_Home.framework */,
+				B793C755E5FCA1B7EBB7B822 /* Pods_Home.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -277,6 +345,10 @@
 			children = (
 				7700BF331C43DBD4E25A0543 /* Pods-Home.debug.xcconfig */,
 				69D74C7CE7B3EFB44222E840 /* Pods-Home.release.xcconfig */,
+				AE9393C1014F53204E576F5E /* Pods-LOLChampions-Home.debug.xcconfig */,
+				FD804B35924C138A2AE6FCCD /* Pods-LOLChampions-Home.release.xcconfig */,
+				6769350573A8F3860AED7543 /* Pods-LOLChampionsApp-Home.debug.xcconfig */,
+				3ED9F0C8E8FA39B58FB7A43A /* Pods-LOLChampionsApp-Home.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../Pods;
@@ -479,17 +551,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EDF3D81278D8A0B00A45CE4 /* ImageDownloaderRepo.swift in Sources */,
+				4EDF3D90278D960200A45CE4 /* HomeViewModel.swift in Sources */,
 				4E2950E5278B181600A42AE3 /* ImageDownloadError.swift in Sources */,
 				4E083F382789BA8A009E7C7F /* Image + bundle.swift in Sources */,
+				4E7A7DF7278E59DE00BEF94D /* Container.swift in Sources */,
+				4EDF3D8E278D923D00A45CE4 /* ChampionsUseCase.swift in Sources */,
 				4E083E2A2789A2C7009E7C7F /* HomeGridView.swift in Sources */,
 				4E295039278AE90100A42AE3 /* HomeListRowOverlay.swift in Sources */,
-				4E2950E3278B149200A42AE3 /* ImageDownloader.swift in Sources */,
+				4E2950E3278B149200A42AE3 /* ImageDownloaderService.swift in Sources */,
+				4EDF3D8C278D91E000A45CE4 /* ChampionsRepo.swift in Sources */,
 				4E083E102789A1EB009E7C7F /* HomeListRow.swift in Sources */,
+				4EDF3D84278D8BAB00A45CE4 /* ImageDownloaderUseCase.swift in Sources */,
 				4E083E112789A1EB009E7C7F /* HomeList.swift in Sources */,
 				4E295031278AD35B00A42AE3 /* HomeHeader.swift in Sources */,
+				4EDF3D87278D8C4900A45CE4 /* ChampionsService.swift in Sources */,
 				4E083F352789B9B5009E7C7F /* Constants.swift in Sources */,
 				4E29502E278ACE9300A42AE3 /* Home.docc in Sources */,
 				4E2950E0278B0C9700A42AE3 /* Champion.swift in Sources */,
+				4EDF3D8A278D90DA00A45CE4 /* ChampionDownloadError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

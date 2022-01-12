@@ -16,7 +16,7 @@
 		4E2950D5278B086200A42AE3 /* NetwrokServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950D0278B086200A42AE3 /* NetwrokServiceType.swift */; };
 		4E2950D6278B086200A42AE3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950D1278B086200A42AE3 /* Request.swift */; };
 		4E2950D7278B086200A42AE3 /* NetworkClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950D2278B086200A42AE3 /* NetworkClientType.swift */; };
-		7EED1C8F322042A62A9043C2 /* Pods_NetworkManger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB497D313EE9A3DFC6AB7848 /* Pods_NetworkManger.framework */; };
+		A5E4ABB6C1EF224EB9B5001C /* Pods_NetworkManger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604CCA9E2D218A702CF71CF0 /* Pods_NetworkManger.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		234BEA6A4A588771665E9093 /* Pods-LOLChampionsApp-NetworkManger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampionsApp-NetworkManger.debug.xcconfig"; path = "Target Support Files/Pods-LOLChampionsApp-NetworkManger/Pods-LOLChampionsApp-NetworkManger.debug.xcconfig"; sourceTree = "<group>"; };
 		4E2950A5278B079F00A42AE3 /* NetworkManger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkManger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E2950A8278B079F00A42AE3 /* NetworkManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManger.h; sourceTree = "<group>"; };
 		4E2950A9278B079F00A42AE3 /* NetworkManger.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkManger.docc; sourceTree = "<group>"; };
@@ -40,8 +41,11 @@
 		4E2950D0278B086200A42AE3 /* NetwrokServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetwrokServiceType.swift; sourceTree = "<group>"; };
 		4E2950D1278B086200A42AE3 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		4E2950D2278B086200A42AE3 /* NetworkClientType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientType.swift; sourceTree = "<group>"; };
+		604CCA9E2D218A702CF71CF0 /* Pods_NetworkManger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkManger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		723E1F76ACADD2A1EEA0E0B9 /* Pods-LOLChampions-NetworkManger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampions-NetworkManger.release.xcconfig"; path = "Target Support Files/Pods-LOLChampions-NetworkManger/Pods-LOLChampions-NetworkManger.release.xcconfig"; sourceTree = "<group>"; };
 		730D922F7543ADB231D08CE9 /* Pods-NetworkManger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkManger.release.xcconfig"; path = "Target Support Files/Pods-NetworkManger/Pods-NetworkManger.release.xcconfig"; sourceTree = "<group>"; };
-		EB497D313EE9A3DFC6AB7848 /* Pods_NetworkManger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkManger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB3039F5A275E311173506F /* Pods-LOLChampionsApp-NetworkManger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampionsApp-NetworkManger.release.xcconfig"; path = "Target Support Files/Pods-LOLChampionsApp-NetworkManger/Pods-LOLChampionsApp-NetworkManger.release.xcconfig"; sourceTree = "<group>"; };
+		D3723D2D85A85868ECA0873F /* Pods-LOLChampions-NetworkManger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampions-NetworkManger.debug.xcconfig"; path = "Target Support Files/Pods-LOLChampions-NetworkManger/Pods-LOLChampions-NetworkManger.debug.xcconfig"; sourceTree = "<group>"; };
 		FE0FC1B21A67AB99624221F6 /* Pods-NetworkManger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkManger.debug.xcconfig"; path = "Target Support Files/Pods-NetworkManger/Pods-NetworkManger.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EED1C8F322042A62A9043C2 /* Pods_NetworkManger.framework in Frameworks */,
+				A5E4ABB6C1EF224EB9B5001C /* Pods_NetworkManger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +116,10 @@
 			children = (
 				FE0FC1B21A67AB99624221F6 /* Pods-NetworkManger.debug.xcconfig */,
 				730D922F7543ADB231D08CE9 /* Pods-NetworkManger.release.xcconfig */,
+				D3723D2D85A85868ECA0873F /* Pods-LOLChampions-NetworkManger.debug.xcconfig */,
+				723E1F76ACADD2A1EEA0E0B9 /* Pods-LOLChampions-NetworkManger.release.xcconfig */,
+				234BEA6A4A588771665E9093 /* Pods-LOLChampionsApp-NetworkManger.debug.xcconfig */,
+				BEB3039F5A275E311173506F /* Pods-LOLChampionsApp-NetworkManger.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -120,7 +128,7 @@
 		EC532510EDE26639C0DA3031 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EB497D313EE9A3DFC6AB7848 /* Pods_NetworkManger.framework */,
+				604CCA9E2D218A702CF71CF0 /* Pods_NetworkManger.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

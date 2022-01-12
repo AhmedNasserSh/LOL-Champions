@@ -6,14 +6,20 @@
 //
 
 import SwiftUI
+import NetworkManger
+import Common
 
 public struct HomeGridView: View {
+    @Inject var viewModel: HomeViewModel
     
-    public init() {}
+    public init() {
+        
+    }
+    
     public var body: some View {
         VStack {
             HomeHeader()
-           // HomeList()
+            HomeList(items: viewModel.champions)
         }
         .background(
             Image(imageName: "background")

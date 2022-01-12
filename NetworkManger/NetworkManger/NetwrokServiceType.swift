@@ -7,5 +7,5 @@
 
 import Foundation
 public protocol NetworkServiceType {
-    var client: NetworkClientType {get set}
+    var client: NetworkClientType {get}
 }

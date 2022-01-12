@@ -4,7 +4,9 @@ workspace 'LOLChampions'
 
 def app_pods
 pod 'SwiftLint'
+pod 'Swinject'
 end
+
 
 target 'LOLChampions' do
 project 'LOLChampions/LOLChampions.project'

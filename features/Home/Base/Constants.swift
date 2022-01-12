@@ -11,5 +11,6 @@ public enum Constants: String {
     
     enum Network: String {
         case championImage = "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/"
+        case championsDataDragon = "http://ddragon.leagueoflegends.com/cdn/12.1.1/data/en_US/champion.json"
     }
 }
