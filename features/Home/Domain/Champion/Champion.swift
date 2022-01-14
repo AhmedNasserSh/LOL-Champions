@@ -24,17 +24,11 @@ struct Champion: Codable, Comparable {
     let info: ChampionInfo
     
     static func < (lhs: Champion, rhs: Champion) -> Bool {
-        let lhsFirstChar = Array(lhs.name)[0]
-        let rhsFirstChar = Array(rhs.name)[0]
-
-        return lhsFirstChar < rhsFirstChar
+        return lhs.name < rhs.name
     }
     
     static func == (lhs: Champion, rhs: Champion) -> Bool {
-        let lhsFirstChar = Array(lhs.name)[0]
-        let rhsFirstChar = Array(rhs.name)[0]
-
-        return lhsFirstChar == rhsFirstChar
+        return lhs.name == rhs.name
     }
 }
 

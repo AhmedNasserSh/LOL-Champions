@@ -15,8 +15,8 @@ protocol ChampionsServiceType: NetworkServiceType {
 
 struct ChampionsService: ChampionsServiceType {
     @Inject private var networkClient: NetworkClientType
+    @Inject private var decoder: JSONDecoder
     var client: NetworkClientType {networkClient}
-    private let decoder = JSONDecoder()
     
     func fetchCahmpions() async throws -> ChampionsResponse {
         guard let url = URL(string: Constants.Network.championsDataDragon.rawValue) else {

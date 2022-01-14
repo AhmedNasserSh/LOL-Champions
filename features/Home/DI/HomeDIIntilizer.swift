@@ -17,6 +17,7 @@ public class HomeDIIntilizer {
     
     public func buildContainer() {
         AppResolver.shared.setDependencyContainer(container)
+        registerDecoder() 
         registerNetworkClient()
         registerImage()
         registerChampions()
@@ -33,10 +34,18 @@ extension HomeDIIntilizer {
     }
 }
 
+// MARK: Decoder
+extension HomeDIIntilizer {
+    private func registerDecoder() {
+        container.register(JSONDecoder.self) { _  in
+            return JSONDecoder()
+        }.inObjectScope(.transient)
+    }
+}
+
 // MARK: Image
 extension HomeDIIntilizer {
     private  func registerImage() {
-        
         container.register(ImageDownloaderServiceType.self) { _  in
             return ImageDownloaderService()
         }
