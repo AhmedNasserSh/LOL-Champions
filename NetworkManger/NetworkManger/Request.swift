@@ -7,12 +7,18 @@
 
 import Foundation
 
+public enum RequestMethod: String {
+    case GET
+    case POST
+}
+
 public struct Request<Output> {
     private let url: URL
+
     public let parse: (Data) throws -> Output?
     
     public var request: URLRequest {
-        return URLRequest(url: url)
+        return  URLRequest(url: url)
     }
     
     public init(url: URL, parse: @escaping (Data) throws -> Output?) {

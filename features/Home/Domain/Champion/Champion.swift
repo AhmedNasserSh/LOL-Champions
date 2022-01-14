@@ -7,12 +7,14 @@
 
 import Foundation
 import SwiftUI
+import Common
 
 struct ChampionsResponse: Codable {
     let data: [String: Champion]
 }
 
-struct Champion: Codable {
+struct Champion: Codable, Comparable {
+    
     let id: String
     let key: String
     let name: String
@@ -20,14 +22,27 @@ struct Champion: Codable {
     let image: ChampionImage
     let tags: [String]
     let info: ChampionInfo
+    
+    static func < (lhs: Champion, rhs: Champion) -> Bool {
+        let lhsFirstChar = Array(lhs.name)[0]
+        let rhsFirstChar = Array(rhs.name)[0]
+
+        return lhsFirstChar < rhsFirstChar
+    }
+    
+    static func == (lhs: Champion, rhs: Champion) -> Bool {
+        let lhsFirstChar = Array(lhs.name)[0]
+        let rhsFirstChar = Array(rhs.name)[0]
+
+        return lhsFirstChar == rhsFirstChar
+    }
 }
 
 struct ChampionInfo: Codable {
-    let info: String
-    let attack: String
-    let defense: String
-    let magic: String
-    let difficulty: String
+    let attack: Int
+    let defense: Int
+    let magic: Int
+    let difficulty: Int
 }
 
 struct ChampionImage: Codable {

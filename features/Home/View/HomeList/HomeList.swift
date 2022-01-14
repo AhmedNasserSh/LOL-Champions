@@ -9,25 +9,27 @@ import SwiftUI
 import Common
 
 struct HomeList: View {
-    @State var items: [Champion]
-    
+    @StateObject var viewModel =  HomeViewModel()
+    private let gridSections: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
+
     var body: some View {
-        GeometryReader { gemotery in
-            ScrollViewUI(hideScrollIndicators: true) {
-                LazyHStack(alignment: .center) {
-                    ForEach(items, id: \.id) { champion in
-                        HomeListRow(champion: champion)
-                            .frame(width: gemotery.size.width - 5, alignment: .center)
-                    }
+        ScrollView(.vertical, showsIndicators: false) {
+            LazyVGrid(columns: gridSections, spacing: 5) {
+                ForEach(viewModel.champions, id: \.id) { champion in
+                    HomeItem(viewModel: champion)
                 }
             }
-            .edgesIgnoringSafeArea(.bottom)
+        }
+        .edgesIgnoringSafeArea(.bottom)
+        .onAppear {
+            viewModel.fetchData()
         }
     }
+        
 }
 
 struct HomeList_Previews: PreviewProvider {
     static var previews: some View {
-        HomeList(items: [])
+        HomeList()
     }
 }

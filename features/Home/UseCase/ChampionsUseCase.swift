@@ -18,9 +18,11 @@ class ChampionsUseCase: ChampionsUseCaseType {
         return try await repo
             .fetchCahmpions()
             .data
-            .map({ (_, champion) in
-            return champion
-        })
+            .map { return $1}
+            .sorted(by: { lhs, rhs in
+                lhs < rhs
+            })
+        
     }
     
 }

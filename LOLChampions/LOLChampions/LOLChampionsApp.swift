@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct LOLChampionsApp: App {
+    init() {
+        AppDiIntilizer().initDependencies()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
