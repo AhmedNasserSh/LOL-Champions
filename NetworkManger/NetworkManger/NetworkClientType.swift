@@ -7,7 +7,7 @@
 
 import Foundation
 public protocol NetworkClientType {
-    func makeRequest<Output>(_ request: Request<Output>) async throws -> Output
+    func makeRequest(_ request: Request) async throws -> Data
 }
 
 enum StatusCode: Int {

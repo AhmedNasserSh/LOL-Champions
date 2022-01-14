@@ -13,19 +13,23 @@ import Common
 class HomeItemViewModel: ObservableObject, Identifiable {
     @Inject private var imageUseCase: ImageDownloaderUseCaseType
     private let champion: Champion
-    @Published public var image: UIImage =  UIImage(name: "temp")
-    @Published public var name =  ""
-
+    @Published var image: UIImage =  UIImage(name: "temp")
+    @Published var name =  ""
+    
     let id: UUID  = UUID()
     
     init(champion: Champion) {
         self.champion = champion
     }
     
-    func getimage() {
+    func getChampionData() {
         Task {
             name = champion.name
-            image = try await imageUseCase.image(for: champion.image.full)
+            do {
+                image = try await imageUseCase.image(for: champion.image.full)
+            } catch {
+                image =  UIImage(name: "temp")
+            }
         }
     }
     

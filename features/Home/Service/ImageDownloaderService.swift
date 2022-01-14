@@ -14,7 +14,7 @@ protocol ImageDownloaderServiceType: NetworkServiceType {
     func downloadImage(champion: String) async throws -> UIImage
 }
 
-class ImageDownloaderService: ImageDownloaderServiceType {
+struct ImageDownloaderService: ImageDownloaderServiceType {
     @Inject private var networkClient: NetworkClientType
     var client: NetworkClientType {networkClient}
     
@@ -23,13 +23,12 @@ class ImageDownloaderService: ImageDownloaderServiceType {
             throw ImageDownloadError.badImage
         }
         
-        let imageRequest = Request<UIImage>(url: url) { data in
-            guard let image = UIImage(data: data) else {
-                throw ImageDownloadError.badImage
-            }
-            return image
-        }
+        let imageRequest = Request(url: url)
+        let imageResponse = try await client.makeRequest(imageRequest)
         
-        return try await client.makeRequest(imageRequest)
+        guard let image = UIImage(data: imageResponse) else {
+            throw ImageDownloadError.badImage
+        }
+        return image
     }
 }

@@ -11,7 +11,7 @@ protocol ChampionsRepoType {
     func fetchCahmpions() async throws -> ChampionsResponse
 }
 
-class ChampionsRepo: ChampionsRepoType {
+struct ChampionsRepo: ChampionsRepoType {
     
    @Inject private var service: ChampionsServiceType
     

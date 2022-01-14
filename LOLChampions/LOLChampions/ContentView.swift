@@ -10,7 +10,7 @@ import Home
 
 struct ContentView: View {
     var body: some View {
-        HomeGridView()
+        HomeMainView()
     }
     
 }

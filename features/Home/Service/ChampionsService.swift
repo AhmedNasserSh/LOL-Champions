@@ -13,24 +13,21 @@ protocol ChampionsServiceType: NetworkServiceType {
     func fetchCahmpions() async throws -> ChampionsResponse
 }
 
-class ChampionsService: ChampionsServiceType {
-    private lazy var decoder = JSONDecoder()
-    
+struct ChampionsService: ChampionsServiceType {
     @Inject private var networkClient: NetworkClientType
     var client: NetworkClientType {networkClient}
+    private let decoder = JSONDecoder()
     
     func fetchCahmpions() async throws -> ChampionsResponse {
         guard let url = URL(string: Constants.Network.championsDataDragon.rawValue) else {
             throw ChampionDownloadError.badRequest
         }
         
-        let championsRequest = Request<ChampionsResponse>(url: url) { [weak self] data in
-            guard let self = self else {throw ChampionDownloadError.badRequest}
-            let championsResponse = try self.decoder.decode(ChampionsResponse.self, from: data)
-            return championsResponse
-        }
+        let championsRequest = Request(url: url)
         
-        return try await client.makeRequest(championsRequest)
+        let response = try await client.makeRequest(championsRequest)
+        
+        return try decoder.decode(ChampionsResponse.self, from: response)
     }
     
 }

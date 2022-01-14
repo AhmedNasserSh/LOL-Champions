@@ -12,18 +12,16 @@ public enum RequestMethod: String {
     case POST
 }
 
-public struct Request<Output> {
+public struct Request {
     private let url: URL
-
-    public let parse: (Data) throws -> Output?
     
-    public var request: URLRequest {
+    public init(url: URL) {
+        self.url = url
+    }
+}
+
+extension Request {
+    var urlRequest: URLRequest {
         return  URLRequest(url: url)
     }
-    
-    public init(url: URL, parse: @escaping (Data) throws -> Output?) {
-        self.url = url
-        self.parse = parse
-    }
-    
 }

@@ -29,7 +29,7 @@ struct HomeItem: View {
             
         }
         .onAppear {
-            viewModel.getimage()
+            viewModel.getChampionData()
         }
     }
 }

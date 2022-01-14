@@ -9,7 +9,7 @@ import SwiftUI
 import NetworkManger
 import Common
 
-public struct HomeGridView: View {
+public struct HomeMainView: View {
     
     public init() {}
     
@@ -31,6 +31,6 @@ public struct HomeGridView: View {
 
 struct HomeGridView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeGridView()
+        HomeMainView()
     }
 }

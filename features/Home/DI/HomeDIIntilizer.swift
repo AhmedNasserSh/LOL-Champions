@@ -20,7 +20,6 @@ public class HomeDIIntilizer {
         registerNetworkClient()
         registerImage()
         registerChampions()
-        registerHomeViewModel()
     }
 
 }
@@ -67,14 +66,5 @@ extension HomeDIIntilizer {
         container.register(ChampionsUseCaseType.self) { _  in
             return ChampionsUseCase()
         }
-    }
-}
-
-// MARK: Home
-extension HomeDIIntilizer {
-    private func registerHomeViewModel() {
-//        container.register(HomeViewModel.self) { _  in
-//            return  HomeViewModel()
-       // }
     }
 }

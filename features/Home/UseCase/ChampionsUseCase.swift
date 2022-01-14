@@ -11,7 +11,7 @@ protocol ChampionsUseCaseType {
     func fetchCahmpions() async throws -> [Champion]
 }
 
-class ChampionsUseCase: ChampionsUseCaseType {
+struct ChampionsUseCase: ChampionsUseCaseType {
     @Inject private var repo: ChampionsRepoType
     
     func fetchCahmpions() async throws -> [Champion] {
