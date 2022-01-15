@@ -1,0 +1,6 @@
+framework module Pods_NetworkManger_NetworkMangerTests {
+  umbrella header "Pods-NetworkManger-NetworkMangerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
