@@ -6,30 +6,33 @@
 //
 
 import SwiftUI
+import Common
 
 public struct ChampionDetailsView: View {
+    @StateObject private var viewModel: ChampionDetailsViewModel
     
-    public init() { }
+    public init(champion: Champion) {
+        _viewModel = StateObject(wrappedValue: ChampionDetailsViewModel(champion: champion))
+    }
+    
     public var body: some View {
         VStack {
-            Image(imageName: "Aatrox")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(maxHeight: 200)
             ScrollView {
-                TagsList(tags: ["Tank", "Fighter"])
+                Image(uiImage: viewModel.image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(maxHeight: 200)
+                TagsList(tags: viewModel.tags)
                 
-                InfoView(name: "Aatrox",
-                         title: "the Darkin Blade",
-                         description: "Once honored defenders")
-                SpellList(spells: ["hi", ""])
+                InfoView(name: viewModel.name,
+                         title: viewModel.title,
+                         description: viewModel.bio)
+                SpellList(spells: viewModel.spells)
             }
-        }.background(Color(red: 0.067, green: 0.098, blue: 0.133))
-    }
-}
-
-struct ChampionDetailsView_Previews: PreviewProvider {
-    static var previews: some View {
-        ChampionDetailsView()
+        }
+        .background(Color(red: 0.067, green: 0.098, blue: 0.133))
+        .onAppear {
+            viewModel.fetchData()
+        }
     }
 }

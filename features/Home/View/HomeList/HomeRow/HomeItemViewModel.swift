@@ -33,4 +33,8 @@ class HomeItemViewModel: ObservableObject, Identifiable {
         }
     }
     
+    func getChampion() -> Champion {
+        return champion
+    }
+    
 }

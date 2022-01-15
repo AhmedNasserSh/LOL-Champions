@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import NetworkManger
 import UIKit
 import Common
+import NetworkManger
 
 protocol ImageDownloaderServiceType: NetworkServiceType {
     func downloadImage(champion: String) async throws -> UIImage

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-enum ImageDownloadError: Error {
+public enum ImageDownloadError: Error {
     case badImage
     case invalidMetadata
 }

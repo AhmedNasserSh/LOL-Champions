@@ -11,7 +11,7 @@ import Common
 struct HomeList: View {
     @StateObject var viewModel =  HomeViewModel()
     private var sections: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
-    
+
     var body: some View {
         ScrollView {
             LazyVGrid(columns: sections, spacing: 5) {

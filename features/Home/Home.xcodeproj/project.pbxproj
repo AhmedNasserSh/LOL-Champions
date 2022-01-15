@@ -20,16 +20,14 @@
 		4E29502F278ACF1900A42AE3 /* Home.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E29502B278ACE9300A42AE3 /* Home.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E295031278AD35B00A42AE3 /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E295030278AD35B00A42AE3 /* HomeHeader.swift */; };
 		4E2950C8278B07BA00A42AE3 /* NetworkManger.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2950C5278B07AF00A42AE3 /* NetworkManger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4E2950E0278B0C9700A42AE3 /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950DF278B0C9700A42AE3 /* Champion.swift */; };
 		4E2950E3278B149200A42AE3 /* ImageDownloaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950E2278B149200A42AE3 /* ImageDownloaderService.swift */; };
-		4E2950E5278B181600A42AE3 /* ImageDownloadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950E4278B181600A42AE3 /* ImageDownloadError.swift */; };
 		4E4C544F278F32290069B774 /* HomeItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4C544E278F32290069B774 /* HomeItemViewModel.swift */; };
+		4E6CB86727930D22006DDC05 /* AppCoordinator.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6CB86027930D19006DDC05 /* AppCoordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4E7A7DF7278E59DE00BEF94D /* HomeDIIntilizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A7DF6278E59DE00BEF94D /* HomeDIIntilizer.swift */; };
 		4E972CF227916AAC009B559D /* UIImage + bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E972CF127916AAC009B559D /* UIImage + bundle.swift */; };
 		4EDF3D81278D8A0B00A45CE4 /* ImageDownloaderRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D80278D8A0B00A45CE4 /* ImageDownloaderRepo.swift */; };
 		4EDF3D84278D8BAB00A45CE4 /* ImageDownloaderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D83278D8BAB00A45CE4 /* ImageDownloaderUseCase.swift */; };
 		4EDF3D87278D8C4900A45CE4 /* ChampionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D86278D8C4900A45CE4 /* ChampionsService.swift */; };
-		4EDF3D8A278D90DA00A45CE4 /* ChampionDownloadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D89278D90DA00A45CE4 /* ChampionDownloadError.swift */; };
 		4EDF3D8C278D91E000A45CE4 /* ChampionsRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D8B278D91E000A45CE4 /* ChampionsRepo.swift */; };
 		4EDF3D8E278D923D00A45CE4 /* ChampionsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D8D278D923D00A45CE4 /* ChampionsUseCase.swift */; };
 		4EDF3D90278D960200A45CE4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D8F278D960200A45CE4 /* HomeViewModel.swift */; };
@@ -72,6 +70,20 @@
 			remoteGlobalIDString = 4E2950AF278B079F00A42AE3;
 			remoteInfo = NetworkMangerTests;
 		};
+		4E6CB85F27930D19006DDC05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E6CB85A27930D19006DDC05 /* AppCoordinator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4E5F768327930BC900A22FC5;
+			remoteInfo = AppCoordinator;
+		};
+		4E6CB86127930D19006DDC05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E6CB85A27930D19006DDC05 /* AppCoordinator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4E5F768D27930BC900A22FC5;
+			remoteInfo = AppCoordinatorTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -81,6 +93,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4E6CB86727930D22006DDC05 /* AppCoordinator.framework in Copy Frameworks */,
 				4E2950C8278B07BA00A42AE3 /* NetworkManger.framework in Copy Frameworks */,
 				4E083EC52789AFA1009E7C7F /* Common.framework in Copy Frameworks */,
 			);
@@ -105,16 +118,14 @@
 		4E29502C278ACE9300A42AE3 /* Home.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Home.docc; sourceTree = "<group>"; };
 		4E295030278AD35B00A42AE3 /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
 		4E2950BF278B07AF00A42AE3 /* NetworkManger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkManger.xcodeproj; path = ../../NetworkManger/NetworkManger.xcodeproj; sourceTree = "<group>"; };
-		4E2950DF278B0C9700A42AE3 /* Champion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
 		4E2950E2278B149200A42AE3 /* ImageDownloaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderService.swift; sourceTree = "<group>"; };
-		4E2950E4278B181600A42AE3 /* ImageDownloadError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadError.swift; sourceTree = "<group>"; };
 		4E4C544E278F32290069B774 /* HomeItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemViewModel.swift; sourceTree = "<group>"; };
+		4E6CB85A27930D19006DDC05 /* AppCoordinator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppCoordinator.xcodeproj; path = ../../AppCoordinator/AppCoordinator.xcodeproj; sourceTree = "<group>"; };
 		4E7A7DF6278E59DE00BEF94D /* HomeDIIntilizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDIIntilizer.swift; sourceTree = "<group>"; };
 		4E972CF127916AAC009B559D /* UIImage + bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + bundle.swift"; sourceTree = "<group>"; };
 		4EDF3D80278D8A0B00A45CE4 /* ImageDownloaderRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderRepo.swift; sourceTree = "<group>"; };
 		4EDF3D83278D8BAB00A45CE4 /* ImageDownloaderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderUseCase.swift; sourceTree = "<group>"; };
 		4EDF3D86278D8C4900A45CE4 /* ChampionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsService.swift; sourceTree = "<group>"; };
-		4EDF3D89278D90DA00A45CE4 /* ChampionDownloadError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDownloadError.swift; sourceTree = "<group>"; };
 		4EDF3D8B278D91E000A45CE4 /* ChampionsRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsRepo.swift; sourceTree = "<group>"; };
 		4EDF3D8D278D923D00A45CE4 /* ChampionsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsUseCase.swift; sourceTree = "<group>"; };
 		4EDF3D8F278D960200A45CE4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -150,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				4E083F332789B9A4009E7C7F /* Base */,
-				4E295044278B01E100A42AE3 /* Domain */,
 				4E2950E1278B147900A42AE3 /* Service */,
 				4EDF3D7F278D89E900A45CE4 /* Repo */,
 				4EDF3D82278D8B9800A45CE4 /* UseCase */,
@@ -205,6 +215,7 @@
 		4E083E132789A1F9009E7C7F /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				4E6CB85A27930D19006DDC05 /* AppCoordinator.xcodeproj */,
 				4E2950BF278B07AF00A42AE3 /* NetworkManger.xcodeproj */,
 				4E083EBC2789AF8B009E7C7F /* Common.xcodeproj */,
 			);
@@ -257,15 +268,6 @@
 			path = HomeRow;
 			sourceTree = "<group>";
 		};
-		4E295044278B01E100A42AE3 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				4EDF3D88278D90C900A45CE4 /* Error */,
-				4E2950DA278B0C8400A42AE3 /* Champion */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
 		4E2950C0278B07AF00A42AE3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,14 +277,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4E2950DA278B0C8400A42AE3 /* Champion */ = {
-			isa = PBXGroup;
-			children = (
-				4E2950DF278B0C9700A42AE3 /* Champion.swift */,
-			);
-			path = Champion;
-			sourceTree = "<group>";
-		};
 		4E2950E1278B147900A42AE3 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +284,15 @@
 				4EDF3D86278D8C4900A45CE4 /* ChampionsService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		4E6CB85B27930D19006DDC05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E6CB86027930D19006DDC05 /* AppCoordinator.framework */,
+				4E6CB86227930D19006DDC05 /* AppCoordinatorTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		4E7A7DD3278DF6A100BEF94D /* DI */ = {
@@ -316,15 +319,6 @@
 				4EDF3D8D278D923D00A45CE4 /* ChampionsUseCase.swift */,
 			);
 			path = UseCase;
-			sourceTree = "<group>";
-		};
-		4EDF3D88278D90C900A45CE4 /* Error */ = {
-			isa = PBXGroup;
-			children = (
-				4E2950E4278B181600A42AE3 /* ImageDownloadError.swift */,
-				4EDF3D89278D90DA00A45CE4 /* ChampionDownloadError.swift */,
-			);
-			path = Error;
 			sourceTree = "<group>";
 		};
 		5927C5C9B8DD75ACAA83A6A8 /* Frameworks */ = {
@@ -433,6 +427,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 4E6CB85B27930D19006DDC05 /* Products */;
+					ProjectRef = 4E6CB85A27930D19006DDC05 /* AppCoordinator.xcodeproj */;
+				},
+				{
 					ProductGroup = 4E083EBD2789AF8B009E7C7F /* Products */;
 					ProjectRef = 4E083EBC2789AF8B009E7C7F /* Common.xcodeproj */;
 				},
@@ -476,6 +474,20 @@
 			fileType = wrapper.cfbundle;
 			path = NetworkMangerTests.xctest;
 			remoteRef = 4E2950C6278B07AF00A42AE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4E6CB86027930D19006DDC05 /* AppCoordinator.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AppCoordinator.framework;
+			remoteRef = 4E6CB85F27930D19006DDC05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4E6CB86227930D19006DDC05 /* AppCoordinatorTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AppCoordinatorTests.xctest;
+			remoteRef = 4E6CB86127930D19006DDC05 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -548,7 +560,6 @@
 			files = (
 				4EDF3D81278D8A0B00A45CE4 /* ImageDownloaderRepo.swift in Sources */,
 				4EDF3D90278D960200A45CE4 /* HomeViewModel.swift in Sources */,
-				4E2950E5278B181600A42AE3 /* ImageDownloadError.swift in Sources */,
 				4E083F382789BA8A009E7C7F /* Image + bundle.swift in Sources */,
 				4E7A7DF7278E59DE00BEF94D /* HomeDIIntilizer.swift in Sources */,
 				4EDF3D8E278D923D00A45CE4 /* ChampionsUseCase.swift in Sources */,
@@ -564,8 +575,6 @@
 				4EDF3D87278D8C4900A45CE4 /* ChampionsService.swift in Sources */,
 				4E083F352789B9B5009E7C7F /* Constants.swift in Sources */,
 				4E29502E278ACE9300A42AE3 /* Home.docc in Sources */,
-				4E2950E0278B0C9700A42AE3 /* Champion.swift in Sources */,
-				4EDF3D8A278D90DA00A45CE4 /* ChampionDownloadError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

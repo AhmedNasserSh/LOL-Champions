@@ -8,12 +8,14 @@
 import Foundation
 import Common
 import UIKit
+import SwiftUI
 
 @MainActor
 class HomeViewModel: ObservableObject {
     @Inject private var championsUseCase: ChampionsUseCaseType
     
     @Published var champions: [HomeItemViewModel] = []
+    @State var selectedChampion: Champion?
     
     func fetchData() {
         Task {

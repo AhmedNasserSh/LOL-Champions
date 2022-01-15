@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct SpellList: View {
-    let spells: [String]
+    let spells: [SpellItemViewModel]
     
     var body: some View {
         VStack {
             Text("Spells")
                 .font(.title2)
+                .fontWeight(.heavy)
                 .foregroundColor(.white)
                 .padding([.top, .leading, .trailing], 5.0)
                 .frame(maxWidth: .infinity,
@@ -21,11 +22,9 @@ struct SpellList: View {
                        alignment: .leading)
             ScrollView {
                 LazyVStack {
-                    ForEach(spells, id: \.self) { tag in
+                    ForEach(spells, id: \.id) { spellsViewModel in
                         Spacer()
-                        SpellItem(image: UIImage(),
-                                  spellName: "Spell",
-                                  spellDesc: "SpellDesc")
+                        SpellItem(viewModel: spellsViewModel)
 
                     }
                 }
@@ -34,11 +33,5 @@ struct SpellList: View {
             .padding(.horizontal, 5.0)
         }
 
-    }
-}
-
-struct SpellList_Previews: PreviewProvider {
-    static var previews: some View {
-        SpellList(spells: ["", "s"])
     }
 }

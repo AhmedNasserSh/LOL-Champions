@@ -6,7 +6,7 @@
 //
 
 import Foundation
-enum ChampionDownloadError: Error {
+public enum ChampionDownloadError: Error {
     case serverError
     case badRequest
 }
