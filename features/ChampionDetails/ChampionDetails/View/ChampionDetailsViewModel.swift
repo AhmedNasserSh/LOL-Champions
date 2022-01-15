@@ -33,7 +33,7 @@ class ChampionDetailsViewModel: ObservableObject {
             bio = champion.blurb
             tags = champion.tags
             image = try await championImageUseCase.image(for: champion.name)
-            spells = try await championInfoUseCase.fetchCahmpionInfo(championName: champion.name)
+            spells = try await championInfoUseCase.fetchChampionInfo(championName: champion.name)
                 .map {SpellItemViewModel(spell: $0)}
         }
     }

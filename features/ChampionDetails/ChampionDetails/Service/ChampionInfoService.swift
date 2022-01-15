@@ -10,14 +10,14 @@ import NetworkManger
 import Common
 
 protocol  ChampionInfoServiceType: NetworkServiceType {
-    func fetchCahmpionInfo(championName: String) async throws -> ChampionInfoResponse
+    func fetchChampionInfo(championName: String) async throws -> ChampionInfoResponse
 }
 
 struct ChampionInfoService: ChampionInfoServiceType {
     @Inject var client: NetworkClientType
     @Inject private var decoder: JSONDecoder
     
-    func fetchCahmpionInfo(championName: String) async throws -> ChampionInfoResponse {
+    func fetchChampionInfo(championName: String) async throws -> ChampionInfoResponse {
         let championInfoPath = ChampionDetailsConstants.Network.championInfoDataDragon.rawValue
         guard let url = URL(string: "\(championInfoPath)\(championName).json") else {
             throw NetworkError.badRequest
