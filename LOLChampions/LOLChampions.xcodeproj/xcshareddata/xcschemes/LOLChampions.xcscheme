@@ -39,13 +39,63 @@
             </BuildableReference>
          </TestableReference>
          <TestableReference
-            skipped = "NO">
+            skipped = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4E083F062789B20A009E7C7F"
                BuildableName = "LOLChampionsUITests.xctest"
                BlueprintName = "LOLChampionsUITests"
                ReferencedContainer = "container:LOLChampions.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4E5F768C27930BC900A22FC5"
+               BuildableName = "AppCoordinatorTests.xctest"
+               BlueprintName = "AppCoordinatorTests"
+               ReferencedContainer = "container:../AppCoordinator/AppCoordinator.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4E083E842789AD26009E7C7F"
+               BuildableName = "ChampionDetailsTests.xctest"
+               BlueprintName = "ChampionDetailsTests"
+               ReferencedContainer = "container:../features/ChampionDetails/ChampionDetails.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4E083D9327899B46009E7C7F"
+               BuildableName = "CommonTests.xctest"
+               BlueprintName = "CommonTests"
+               ReferencedContainer = "container:../Common/Common.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4E083DEE2789A19B009E7C7F"
+               BuildableName = "HomeTests.xctest"
+               BlueprintName = "HomeTests"
+               ReferencedContainer = "container:../features/Home/Home.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4E2950AE278B079F00A42AE3"
+               BuildableName = "NetworkMangerTests.xctest"
+               BlueprintName = "NetworkMangerTests"
+               ReferencedContainer = "container:../NetworkManger/NetworkManger.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
