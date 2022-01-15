@@ -10,7 +10,7 @@ import NetworkManger
 import Common
 
 public struct HomeMainView: View {
-    
+
     public init() {}
     
     public var body: some View {
@@ -25,12 +25,7 @@ public struct HomeMainView: View {
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         )
         .edgesIgnoringSafeArea(.bottom)
-       
-    }
-}
-
-struct HomeMainView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeMainView()
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
     }
 }

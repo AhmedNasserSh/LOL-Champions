@@ -12,9 +12,11 @@ struct SpellItem: View {
     
     var body: some View {
         HStack(spacing: 5.0) {
-            Image(uiImage: viewModel.image)
-                .resizable()
-                .frame(width: 50, height: 50)
+            VStack(alignment: .center) {
+                Image(uiImage: viewModel.image)
+                    .resizable()
+                .frame(maxWidth: 80, maxHeight: 80)
+            }
             VStack(spacing: 5.0) {
                 Text(viewModel.name)
                     .font(.headline)
@@ -32,7 +34,8 @@ struct SpellItem: View {
         .padding(5)
         .background(Color.black)
         .opacity(0.7)
-        .cornerRadius(5)
+        .cornerRadius(10)
+        .frame(maxHeight: 120)
         .onAppear {
             viewModel.getChampionData()
         }

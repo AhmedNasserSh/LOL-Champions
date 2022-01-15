@@ -18,7 +18,7 @@ struct TagsView: View {
             .padding()
             .background(Color.black)
             .opacity(0.7)
-            .cornerRadius(5)
+            .cornerRadius(10)
         
     }
 }

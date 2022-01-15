@@ -32,7 +32,7 @@ extension HomeDIIntilizer {
     private  func registerCoordinator() {
         container.register(AppCoordinator.self) { _  in
             return AppCoordinator()
-        }.inObjectScope(.container)
+        }.inObjectScope(.transient)
         
     }
 }

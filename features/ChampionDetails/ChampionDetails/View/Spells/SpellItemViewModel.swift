@@ -26,7 +26,7 @@ class SpellItemViewModel: ObservableObject, Identifiable {
     func getChampionData() {
         Task {
             name = spell.name
-            description = spell.description
+            description = String(spell.description.split(separator: ".")[0]) + "."
             do {
                 image = try await imageUseCase.spellImage(for: spell.image.full)
             } catch {

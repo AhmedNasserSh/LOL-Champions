@@ -12,7 +12,7 @@ struct TagsList: View {
     
     var body: some View {
         ScrollView(.horizontal) {
-            LazyHStack {
+            LazyHStack(spacing: 0) {
                 ForEach(tags, id: \.self) { tag in
                     TagsView(text: tag)
                         .padding(.horizontal, 3.0)

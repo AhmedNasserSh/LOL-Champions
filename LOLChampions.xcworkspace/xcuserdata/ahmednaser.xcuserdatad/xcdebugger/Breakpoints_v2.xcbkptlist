@@ -23,32 +23,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DB5C8741-57F9-4429-A4AE-9908073B4165"
+            uuid = "5E6FDD3A-F912-4D3F-A12A-4550A3D17622"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "features/ChampionDetails/ChampionDetails/Service/ChampionInfoService.swift"
+            filePath = "features/ChampionDetails/ChampionDetails/UseCase/ChampionImageDownloaderUseCase.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "fetchCahmpionInfo(championName:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CCDB944A-066B-46C9-8369-E828C1DBB90D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "features/ChampionDetails/ChampionDetails/Service/ChampionInfoService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "fetchCahmpionInfo(championName:)"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "spellImage(for:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

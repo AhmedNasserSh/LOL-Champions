@@ -17,7 +17,7 @@ public struct ChampionDetailsView: View {
     
     public var body: some View {
         VStack {
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 Image(uiImage: viewModel.image)
                     .resizable()
                     .aspectRatio(contentMode: .fill)

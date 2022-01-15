@@ -20,7 +20,7 @@ struct ChampionInfoService: ChampionInfoServiceType {
     
     func fetchCahmpionInfo(championName: String) async throws -> ChampionInfoResponse {
         let championInfoPath = ChampionDetailsConstants.Network.championInfoDataDragon.rawValue
-        guard let url = URL(string: "\(championInfoPath) \(championName).json") else {
+        guard let url = URL(string: "\(championInfoPath)\(championName).json") else {
             throw NetworkError.badRequest
         }
         
