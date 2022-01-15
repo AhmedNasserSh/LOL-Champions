@@ -21,10 +21,10 @@ jobs:
           echo $default | cat >default
           echo Using default scheme: $default
   
-      - name: setup-cocoapods
-        uses: maxim-lobanov/setup-cocoapods@v1
-        with:
-        podfile-path: Podfile.lock
+      - name: Install Dependencies
+        run: |
+         pod install --repo-update
+        shell: bash
 
       - name: Build
         env:
