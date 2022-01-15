@@ -25,6 +25,9 @@ end
 target 'NetworkManger' do
 project 'NetworkManger/NetworkManger.project'
 app_pods
+target 'NetworkMangerTests' do
+    pod 'Swinject'
+end
 end
 
 target 'Home' do

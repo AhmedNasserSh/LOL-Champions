@@ -10,7 +10,6 @@ import SwiftUI
 struct HomeHeader: View {
     var body: some View {
         VStack {
-
             Spacer()
             Image(imageName: "logo")
                 .resizable()

@@ -10,23 +10,25 @@ import XCTest
 
 class NetworkMangerTests: XCTestCase {
 
+    var networkClient: NetworkClient?
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        networkClient = NetworkClient()
     }
 
     override func tearDownWithError() throws {
+        networkClient = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testNetwrokSucccess() async throws {
+        let request = Request(url: URL(string: "https://github.com")!)
+        let data = try? await networkClient?.makeRequest(request)
+        XCTAssertNotNil(data)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testNetwrokFaliure() async {
+        let request = Request(url: URL(string: "https://gb.com")!)
+        let data = try? await networkClient?.makeRequest(request)
+        XCTAssertNil(data)
     }
-
 }
