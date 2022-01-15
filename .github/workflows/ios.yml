@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     name: Build and Test default scheme using any available iPhone simulator
-    runs-on: macos-latest
+    runs-on: macOS-11
 
     steps:
       - name: Checkout
