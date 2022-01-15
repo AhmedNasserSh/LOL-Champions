@@ -20,7 +20,7 @@ struct HomeItem: View {
                     .resizable()
                     .cornerRadius(20)
                     .scaledToFit()
-                    .overlay(HomeItemOverlay(text: viewModel.name) ,
+                    .overlay(TextOverlay(text: viewModel.name) ,
                              alignment: .bottom)
                     .rotation3DEffect(.degrees(5), axis: (x: 0, y: 1, z: 0))
                     .padding()

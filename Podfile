@@ -30,5 +30,5 @@ end
 
 target 'ChampionDetails' do
 project 'features/ChampionDetails/ChampionDetails.project'
-app_pods
+pod 'SwiftLint'
 end

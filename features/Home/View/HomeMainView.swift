@@ -1,5 +1,5 @@
 //
-//  HomeGridView.swift
+//  HomeMainView.swift
 //  Home
 //
 //  Created by Ahmed Naser on 08/01/2022.
@@ -29,7 +29,7 @@ public struct HomeMainView: View {
     }
 }
 
-struct HomeGridView_Previews: PreviewProvider {
+struct HomeMainView_Previews: PreviewProvider {
     static var previews: some View {
         HomeMainView()
     }

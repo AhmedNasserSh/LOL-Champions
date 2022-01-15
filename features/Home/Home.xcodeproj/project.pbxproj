@@ -19,7 +19,6 @@
 		4E29502E278ACE9300A42AE3 /* Home.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4E29502C278ACE9300A42AE3 /* Home.docc */; };
 		4E29502F278ACF1900A42AE3 /* Home.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E29502B278ACE9300A42AE3 /* Home.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E295031278AD35B00A42AE3 /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E295030278AD35B00A42AE3 /* HomeHeader.swift */; };
-		4E295039278AE90100A42AE3 /* HomeItemOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E295038278AE90100A42AE3 /* HomeItemOverlay.swift */; };
 		4E2950C8278B07BA00A42AE3 /* NetworkManger.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2950C5278B07AF00A42AE3 /* NetworkManger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4E2950E0278B0C9700A42AE3 /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950DF278B0C9700A42AE3 /* Champion.swift */; };
 		4E2950E3278B149200A42AE3 /* ImageDownloaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950E2278B149200A42AE3 /* ImageDownloaderService.swift */; };
@@ -105,7 +104,6 @@
 		4E29502B278ACE9300A42AE3 /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
 		4E29502C278ACE9300A42AE3 /* Home.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Home.docc; sourceTree = "<group>"; };
 		4E295030278AD35B00A42AE3 /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
-		4E295038278AE90100A42AE3 /* HomeItemOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemOverlay.swift; sourceTree = "<group>"; };
 		4E2950BF278B07AF00A42AE3 /* NetworkManger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkManger.xcodeproj; path = ../../NetworkManger/NetworkManger.xcodeproj; sourceTree = "<group>"; };
 		4E2950DF278B0C9700A42AE3 /* Champion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
 		4E2950E2278B149200A42AE3 /* ImageDownloaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderService.swift; sourceTree = "<group>"; };
@@ -253,7 +251,6 @@
 		4E295037278AE8E800A42AE3 /* HomeRow */ = {
 			isa = PBXGroup;
 			children = (
-				4E295038278AE90100A42AE3 /* HomeItemOverlay.swift */,
 				4E083E0C2789A1EB009E7C7F /* HomeItem.swift */,
 				4E4C544E278F32290069B774 /* HomeItemViewModel.swift */,
 			);
@@ -556,7 +553,6 @@
 				4E7A7DF7278E59DE00BEF94D /* HomeDIIntilizer.swift in Sources */,
 				4EDF3D8E278D923D00A45CE4 /* ChampionsUseCase.swift in Sources */,
 				4E083E2A2789A2C7009E7C7F /* HomeMainView.swift in Sources */,
-				4E295039278AE90100A42AE3 /* HomeItemOverlay.swift in Sources */,
 				4E2950E3278B149200A42AE3 /* ImageDownloaderService.swift in Sources */,
 				4EDF3D8C278D91E000A45CE4 /* ChampionsRepo.swift in Sources */,
 				4E083E102789A1EB009E7C7F /* HomeItem.swift in Sources */,

@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
-import Common
 
-struct HomeItemOverlay: View {
+public struct TextOverlay: View {
     let text: String
+    public init(text: String) {
+        self.text = text
+    }
     
-    var body: some View {
+    public var body: some View {
         Text(text)
             .font(.body)
             .frame(maxWidth: .infinity)
@@ -25,6 +27,6 @@ struct HomeItemOverlay: View {
 
 struct HomeListRowOverlay_Previews: PreviewProvider {
     static var previews: some View {
-        HomeItemOverlay(text: "Ahari")
+        TextOverlay(text: "Ahari")
     }
 }
