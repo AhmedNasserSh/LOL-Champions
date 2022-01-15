@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4E083DF02789A19B009E7C7F /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E083DE52789A19B009E7C7F /* Home.framework */; };
-		4E083DF52789A19B009E7C7F /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083DF42789A19B009E7C7F /* HomeTests.swift */; };
 		4E083E102789A1EB009E7C7F /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083E0C2789A1EB009E7C7F /* HomeItem.swift */; };
 		4E083E112789A1EB009E7C7F /* HomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083E0D2789A1EB009E7C7F /* HomeList.swift */; };
 		4E083E2A2789A2C7009E7C7F /* HomeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083E292789A2C7009E7C7F /* HomeMainView.swift */; };
@@ -23,6 +22,9 @@
 		4E2950E3278B149200A42AE3 /* ImageDownloaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950E2278B149200A42AE3 /* ImageDownloaderService.swift */; };
 		4E4C544F278F32290069B774 /* HomeItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4C544E278F32290069B774 /* HomeItemViewModel.swift */; };
 		4E6CB86727930D22006DDC05 /* AppCoordinator.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6CB86027930D19006DDC05 /* AppCoordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4E6CB87F27932E17006DDC05 /* ChampionUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CB87E27932E17006DDC05 /* ChampionUseCaseTests.swift */; };
+		4E6CB88827932E46006DDC05 /* ChampionsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CB88727932E46006DDC05 /* ChampionsServiceMock.swift */; };
+		4E6CB88A2793309D006DDC05 /* ChampionRepoMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CB8892793309D006DDC05 /* ChampionRepoMock.swift */; };
 		4E7A7DF7278E59DE00BEF94D /* HomeDIIntilizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A7DF6278E59DE00BEF94D /* HomeDIIntilizer.swift */; };
 		4E972CF227916AAC009B559D /* UIImage + bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E972CF127916AAC009B559D /* UIImage + bundle.swift */; };
 		4EDF3D81278D8A0B00A45CE4 /* ImageDownloaderRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D80278D8A0B00A45CE4 /* ImageDownloaderRepo.swift */; };
@@ -31,6 +33,7 @@
 		4EDF3D8C278D91E000A45CE4 /* ChampionsRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D8B278D91E000A45CE4 /* ChampionsRepo.swift */; };
 		4EDF3D8E278D923D00A45CE4 /* ChampionsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D8D278D923D00A45CE4 /* ChampionsUseCase.swift */; };
 		4EDF3D90278D960200A45CE4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D8F278D960200A45CE4 /* HomeViewModel.swift */; };
+		67CA3B93667D529BD8209FFB /* Pods_Home_HomeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C83C0E61E15DE66B112187 /* Pods_Home_HomeTests.framework */; };
 		99BB64712EBEE7B9AC54226C /* Pods_Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B793C755E5FCA1B7EBB7B822 /* Pods_Home.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,10 +106,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18C83C0E61E15DE66B112187 /* Pods_Home_HomeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Home_HomeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25E001652E0DBCE0DBB121A9 /* Pods-Home-HomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home-HomeTests.debug.xcconfig"; path = "Target Support Files/Pods-Home-HomeTests/Pods-Home-HomeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3ED9F0C8E8FA39B58FB7A43A /* Pods-LOLChampionsApp-Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampionsApp-Home.release.xcconfig"; path = "Target Support Files/Pods-LOLChampionsApp-Home/Pods-LOLChampionsApp-Home.release.xcconfig"; sourceTree = "<group>"; };
 		4E083DE52789A19B009E7C7F /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E083DEF2789A19B009E7C7F /* HomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E083DF42789A19B009E7C7F /* HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
 		4E083E0C2789A1EB009E7C7F /* HomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
 		4E083E0D2789A1EB009E7C7F /* HomeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeList.swift; sourceTree = "<group>"; };
 		4E083E292789A2C7009E7C7F /* HomeMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainView.swift; sourceTree = "<group>"; };
@@ -121,6 +125,9 @@
 		4E2950E2278B149200A42AE3 /* ImageDownloaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderService.swift; sourceTree = "<group>"; };
 		4E4C544E278F32290069B774 /* HomeItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemViewModel.swift; sourceTree = "<group>"; };
 		4E6CB85A27930D19006DDC05 /* AppCoordinator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppCoordinator.xcodeproj; path = ../../AppCoordinator/AppCoordinator.xcodeproj; sourceTree = "<group>"; };
+		4E6CB87E27932E17006DDC05 /* ChampionUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionUseCaseTests.swift; sourceTree = "<group>"; };
+		4E6CB88727932E46006DDC05 /* ChampionsServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsServiceMock.swift; sourceTree = "<group>"; };
+		4E6CB8892793309D006DDC05 /* ChampionRepoMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionRepoMock.swift; sourceTree = "<group>"; };
 		4E7A7DF6278E59DE00BEF94D /* HomeDIIntilizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDIIntilizer.swift; sourceTree = "<group>"; };
 		4E972CF127916AAC009B559D /* UIImage + bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + bundle.swift"; sourceTree = "<group>"; };
 		4EDF3D80278D8A0B00A45CE4 /* ImageDownloaderRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderRepo.swift; sourceTree = "<group>"; };
@@ -132,6 +139,7 @@
 		6769350573A8F3860AED7543 /* Pods-LOLChampionsApp-Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampionsApp-Home.debug.xcconfig"; path = "Target Support Files/Pods-LOLChampionsApp-Home/Pods-LOLChampionsApp-Home.debug.xcconfig"; sourceTree = "<group>"; };
 		69D74C7CE7B3EFB44222E840 /* Pods-Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home.release.xcconfig"; path = "Target Support Files/Pods-Home/Pods-Home.release.xcconfig"; sourceTree = "<group>"; };
 		7700BF331C43DBD4E25A0543 /* Pods-Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home.debug.xcconfig"; path = "Target Support Files/Pods-Home/Pods-Home.debug.xcconfig"; sourceTree = "<group>"; };
+		9AA42F1CD4E2907B95BDACD2 /* Pods-Home-HomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home-HomeTests.release.xcconfig"; path = "Target Support Files/Pods-Home-HomeTests/Pods-Home-HomeTests.release.xcconfig"; sourceTree = "<group>"; };
 		AE9393C1014F53204E576F5E /* Pods-LOLChampions-Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampions-Home.debug.xcconfig"; path = "Target Support Files/Pods-LOLChampions-Home/Pods-LOLChampions-Home.debug.xcconfig"; sourceTree = "<group>"; };
 		B793C755E5FCA1B7EBB7B822 /* Pods_Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD804B35924C138A2AE6FCCD /* Pods-LOLChampions-Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampions-Home.release.xcconfig"; path = "Target Support Files/Pods-LOLChampions-Home/Pods-LOLChampions-Home.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E083DF02789A19B009E7C7F /* Home.framework in Frameworks */,
+				67CA3B93667D529BD8209FFB /* Pods_Home_HomeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +195,8 @@
 		4E083DF32789A19B009E7C7F /* HomeTests */ = {
 			isa = PBXGroup;
 			children = (
-				4E083DF42789A19B009E7C7F /* HomeTests.swift */,
+				4E6CB88627932E25006DDC05 /* support */,
+				4E6CB87E27932E17006DDC05 /* ChampionUseCaseTests.swift */,
 			);
 			path = HomeTests;
 			sourceTree = "<group>";
@@ -295,6 +305,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4E6CB88627932E25006DDC05 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				4E6CB88727932E46006DDC05 /* ChampionsServiceMock.swift */,
+				4E6CB8892793309D006DDC05 /* ChampionRepoMock.swift */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
 		4E7A7DD3278DF6A100BEF94D /* DI */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				B793C755E5FCA1B7EBB7B822 /* Pods_Home.framework */,
+				18C83C0E61E15DE66B112187 /* Pods_Home_HomeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -338,6 +358,8 @@
 				FD804B35924C138A2AE6FCCD /* Pods-LOLChampions-Home.release.xcconfig */,
 				6769350573A8F3860AED7543 /* Pods-LOLChampionsApp-Home.debug.xcconfig */,
 				3ED9F0C8E8FA39B58FB7A43A /* Pods-LOLChampionsApp-Home.release.xcconfig */,
+				25E001652E0DBCE0DBB121A9 /* Pods-Home-HomeTests.debug.xcconfig */,
+				9AA42F1CD4E2907B95BDACD2 /* Pods-Home-HomeTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../Pods;
@@ -382,9 +404,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E083DFC2789A19B009E7C7F /* Build configuration list for PBXNativeTarget "HomeTests" */;
 			buildPhases = (
+				0C561D7F56028EDA267367E0 /* [CP] Check Pods Manifest.lock */,
 				4E083DEB2789A19B009E7C7F /* Sources */,
 				4E083DEC2789A19B009E7C7F /* Frameworks */,
 				4E083DED2789A19B009E7C7F /* Resources */,
+				96AEB78A07DBEB4268A4E785 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -511,6 +535,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0C561D7F56028EDA267367E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Home-HomeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4E083F4D2789F165009E7C7F /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -551,6 +597,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		96AEB78A07DBEB4268A4E785 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Home-HomeTests/Pods-Home-HomeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Home-HomeTests/Pods-Home-HomeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Home-HomeTests/Pods-Home-HomeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -582,7 +645,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E083DF52789A19B009E7C7F /* HomeTests.swift in Sources */,
+				4E6CB88A2793309D006DDC05 /* ChampionRepoMock.swift in Sources */,
+				4E6CB88827932E46006DDC05 /* ChampionsServiceMock.swift in Sources */,
+				4E6CB87F27932E17006DDC05 /* ChampionUseCaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -779,8 +844,8 @@
 		};
 		4E083DFD2789A19B009E7C7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25E001652E0DBCE0DBB121A9 /* Pods-Home-HomeTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 64J85CZRGD;
@@ -801,8 +866,8 @@
 		};
 		4E083DFE2789A19B009E7C7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AA42F1CD4E2907B95BDACD2 /* Pods-Home-HomeTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 64J85CZRGD;

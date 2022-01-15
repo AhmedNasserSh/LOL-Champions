@@ -15,8 +15,7 @@ protocol ImageDownloaderServiceType: NetworkServiceType {
 }
 
 struct ImageDownloaderService: ImageDownloaderServiceType {
-    @Inject private var networkClient: NetworkClientType
-    var client: NetworkClientType {networkClient}
+    @Inject var client: NetworkClientType 
     
     func downloadImage(champion: String) async throws -> UIImage {
         guard let url = URL(string: Constants.Network.championImage.rawValue + "\(champion)") else {

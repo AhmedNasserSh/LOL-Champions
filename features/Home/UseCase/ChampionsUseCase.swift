@@ -8,15 +8,15 @@
 import Foundation
 import Common
 protocol ChampionsUseCaseType {
-    func fetchCahmpions() async throws -> [Champion]
+    func fetchChampions() async throws -> [Champion]
 }
 
 struct ChampionsUseCase: ChampionsUseCaseType {
     @Inject private var repo: ChampionsRepoType
     
-    func fetchCahmpions() async throws -> [Champion] {
+    func fetchChampions() async throws -> [Champion] {
         return try await repo
-            .fetchCahmpions()
+            .fetchChampions()
             .data
             .map { return $1}
             .sorted(by: { lhs, rhs in

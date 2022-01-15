@@ -19,7 +19,7 @@ class HomeViewModel: ObservableObject {
     
     func fetchData() {
         Task {
-            champions = try await championsUseCase.fetchCahmpions()
+            champions = try await championsUseCase.fetchChampions()
                 .map { HomeItemViewModel(champion: $0)}
         }
     }

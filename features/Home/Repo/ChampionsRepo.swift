@@ -8,14 +8,14 @@
 import Foundation
 import Common
 protocol ChampionsRepoType {
-    func fetchCahmpions() async throws -> ChampionsResponse
+    func fetchChampions() async throws -> ChampionsResponse
 }
 
 struct ChampionsRepo: ChampionsRepoType {
     
    @Inject private var service: ChampionsServiceType
     
-    func fetchCahmpions() async throws -> ChampionsResponse {
-        return try await service.fetchCahmpions()
+    func fetchChampions() async throws -> ChampionsResponse {
+        return try await service.fetchChampions()
     }
 }

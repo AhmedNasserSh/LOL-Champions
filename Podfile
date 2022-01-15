@@ -33,6 +33,9 @@ end
 target 'Home' do
 project 'features/Home/Home.project'
 app_pods
+target 'HomeTests' do
+    pod 'Swinject'
+end
 end
 
 target 'ChampionDetails' do

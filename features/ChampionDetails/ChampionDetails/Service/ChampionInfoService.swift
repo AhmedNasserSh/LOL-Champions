@@ -14,9 +14,8 @@ protocol  ChampionInfoServiceType: NetworkServiceType {
 }
 
 struct ChampionInfoService: ChampionInfoServiceType {
-    @Inject private var networkClient: NetworkClientType
+    @Inject var client: NetworkClientType
     @Inject private var decoder: JSONDecoder
-    var client: NetworkClientType {networkClient}
     
     func fetchCahmpionInfo(championName: String) async throws -> ChampionInfoResponse {
         let championInfoPath = ChampionDetailsConstants.Network.championInfoDataDragon.rawValue
