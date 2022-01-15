@@ -10,22 +10,21 @@ import Common
 
 struct HomeList: View {
     @StateObject var viewModel =  HomeViewModel()
-    private let gridSections: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
-
+    private var sections: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
+    
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false) {
-            LazyVGrid(columns: gridSections, spacing: 5) {
-                ForEach(viewModel.champions, id: \.id) { champion in
-                    HomeItem(viewModel: champion)
+        ScrollView {
+            LazyVGrid(columns: sections, spacing: 5) {
+                ForEach(viewModel.champions, id: \.id) { championViewmodel in
+                    HomeItem(viewModel: championViewmodel)
                 }
             }
-        }
-        .edgesIgnoringSafeArea(.bottom)
-        .onAppear {
-            viewModel.fetchData()
+            .edgesIgnoringSafeArea(.bottom)
+            .onAppear {
+                viewModel.fetchData()
+            }
         }
     }
-        
 }
 
 struct HomeList_Previews: PreviewProvider {
