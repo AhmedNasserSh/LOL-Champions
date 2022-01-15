@@ -30,6 +30,7 @@ public struct ChampionDetailsView: View {
                 SpellList(spells: viewModel.spells)
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
         .background(Color(red: 0.067, green: 0.098, blue: 0.133))
         .onAppear {
             viewModel.fetchData()

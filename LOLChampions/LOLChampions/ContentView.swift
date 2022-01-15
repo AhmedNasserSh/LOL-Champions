@@ -13,6 +13,7 @@ struct ContentView: View {
         NavigationView {
             HomeMainView()
         }
+        .accentColor(.white)
     }
     
 }
