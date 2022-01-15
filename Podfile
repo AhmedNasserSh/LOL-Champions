@@ -1,3 +1,4 @@
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios , 15.0
 use_frameworks!
 workspace 'LOLChampions'
@@ -41,4 +42,7 @@ end
 target 'ChampionDetails' do
 project 'features/ChampionDetails/ChampionDetails.project'
 app_pods
+target 'ChampionDetailsTests' do
+    pod 'Swinject'
+end
 end
