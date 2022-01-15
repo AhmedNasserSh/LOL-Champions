@@ -16,6 +16,10 @@ end
 target 'Common' do
 project 'Common/Common.project'
 app_pods
+
+target 'CommonTests' do
+    pod 'Swinject'
+end
 end
 
 target 'NetworkManger' do
