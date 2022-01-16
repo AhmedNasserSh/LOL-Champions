@@ -1,0 +1,6 @@
+framework module Pods_AppCoordinator {
+  umbrella header "Pods-AppCoordinator-umbrella.h"
+
+  export *
+  module * { export * }
+}
