@@ -468,7 +468,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n\n";
 		};
 		A5368BBE3DC33CE9498D6698 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -726,9 +726,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.marvel.heros.www.ChampionDetails;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -755,9 +756,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.marvel.heros.www.ChampionDetails;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -815,7 +817,7 @@
 				4E083E8E2789AD27009E7C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4E083E8F2789AD27009E7C7F /* Build configuration list for PBXNativeTarget "ChampionDetails" */ = {
 			isa = XCConfigurationList;
@@ -824,7 +826,7 @@
 				4E083E912789AD27009E7C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4E083E922789AD27009E7C7F /* Build configuration list for PBXNativeTarget "ChampionDetailsTests" */ = {
 			isa = XCConfigurationList;
@@ -833,7 +835,7 @@
 				4E083E942789AD27009E7C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

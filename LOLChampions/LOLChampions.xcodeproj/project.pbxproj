@@ -18,6 +18,7 @@
 		4E083F2F2789B24E009E7C7F /* ChampionDetails.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4E083F2A2789B238009E7C7F /* ChampionDetails.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4E188F3C278EEB2400F649C2 /* AppDiIntilizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E188F3B278EEB2400F649C2 /* AppDiIntilizer.swift */; };
 		9148CABC87D3C998C702C2C6 /* Pods_LOLChampions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB82D5F1F3F079B6B59106C /* Pods_LOLChampions.framework */; };
+		DCB98BADA668A1BA70E97549 /* Pods_LOLChampions_LOLChampionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7534CA6B9C72850560FE5D85 /* Pods_LOLChampions_LOLChampionsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,10 +97,13 @@
 		4E083F242789B238009E7C7F /* ChampionDetails.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ChampionDetails.xcodeproj; path = ../../features/ChampionDetails/ChampionDetails.xcodeproj; sourceTree = "<group>"; };
 		4E188F3B278EEB2400F649C2 /* AppDiIntilizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDiIntilizer.swift; sourceTree = "<group>"; };
 		4E188F41278EFFEF00F649C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7534CA6B9C72850560FE5D85 /* Pods_LOLChampions_LOLChampionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOLChampions_LOLChampionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E239491FB513A468B84A75 /* Pods-LOLChampionsApp-LOLChampions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampionsApp-LOLChampions.debug.xcconfig"; path = "Target Support Files/Pods-LOLChampionsApp-LOLChampions/Pods-LOLChampionsApp-LOLChampions.debug.xcconfig"; sourceTree = "<group>"; };
 		9AB82D5F1F3F079B6B59106C /* Pods_LOLChampions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOLChampions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A08F1655AF6119D520F55A88 /* Pods-LOLChampions-LOLChampionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampions-LOLChampionsTests.release.xcconfig"; path = "Target Support Files/Pods-LOLChampions-LOLChampionsTests/Pods-LOLChampions-LOLChampionsTests.release.xcconfig"; sourceTree = "<group>"; };
 		C52C89BB353F911223FA36A5 /* Pods-LOLChampions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampions.debug.xcconfig"; path = "Target Support Files/Pods-LOLChampions/Pods-LOLChampions.debug.xcconfig"; sourceTree = "<group>"; };
 		C62A0F85CA808FD673F8FBA7 /* Pods-LOLChampionsApp-LOLChampions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampionsApp-LOLChampions.release.xcconfig"; path = "Target Support Files/Pods-LOLChampionsApp-LOLChampions/Pods-LOLChampionsApp-LOLChampions.release.xcconfig"; sourceTree = "<group>"; };
+		F8F882E89F1FDFD4839C5479 /* Pods-LOLChampions-LOLChampionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampions-LOLChampionsTests.debug.xcconfig"; path = "Target Support Files/Pods-LOLChampions-LOLChampionsTests/Pods-LOLChampions-LOLChampionsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB98BADA668A1BA70E97549 /* Pods_LOLChampions_LOLChampionsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				9AB82D5F1F3F079B6B59106C /* Pods_LOLChampions.framework */,
+				7534CA6B9C72850560FE5D85 /* Pods_LOLChampions_LOLChampionsTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,6 +246,8 @@
 				3CDE83C0ECCBE4C350444842 /* Pods-LOLChampions.release.xcconfig */,
 				84E239491FB513A468B84A75 /* Pods-LOLChampionsApp-LOLChampions.debug.xcconfig */,
 				C62A0F85CA808FD673F8FBA7 /* Pods-LOLChampionsApp-LOLChampions.release.xcconfig */,
+				F8F882E89F1FDFD4839C5479 /* Pods-LOLChampions-LOLChampionsTests.debug.xcconfig */,
+				A08F1655AF6119D520F55A88 /* Pods-LOLChampions-LOLChampionsTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -273,9 +281,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E083F142789B20A009E7C7F /* Build configuration list for PBXNativeTarget "LOLChampionsTests" */;
 			buildPhases = (
+				1D4653FBA177D47A3C9C8C66 /* [CP] Check Pods Manifest.lock */,
 				4E083EF92789B20A009E7C7F /* Sources */,
 				4E083EFA2789B20A009E7C7F /* Frameworks */,
 				4E083EFB2789B20A009E7C7F /* Resources */,
+				E45883B4E3D578340FC409E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -438,6 +448,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1D4653FBA177D47A3C9C8C66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LOLChampions-LOLChampionsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4E083F412789F051009E7C7F /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -454,7 +486,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n\n";
 		};
 		9D915779C5D3AA3EA46FDB59 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -471,6 +503,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LOLChampions/Pods-LOLChampions-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E45883B4E3D578340FC409E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LOLChampions-LOLChampionsTests/Pods-LOLChampions-LOLChampionsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LOLChampions-LOLChampionsTests/Pods-LOLChampions-LOLChampionsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LOLChampions-LOLChampionsTests/Pods-LOLChampions-LOLChampionsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -662,7 +711,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -693,14 +742,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		4E083F152789B20A009E7C7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8F882E89F1FDFD4839C5479 /* Pods-LOLChampions-LOLChampionsTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -724,8 +773,8 @@
 		};
 		4E083F162789B20A009E7C7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A08F1655AF6119D520F55A88 /* Pods-LOLChampions-LOLChampionsTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -803,7 +852,7 @@
 				4E083F102789B20A009E7C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4E083F112789B20A009E7C7F /* Build configuration list for PBXNativeTarget "LOLChampions" */ = {
 			isa = XCConfigurationList;
@@ -812,7 +861,7 @@
 				4E083F132789B20A009E7C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4E083F142789B20A009E7C7F /* Build configuration list for PBXNativeTarget "LOLChampionsTests" */ = {
 			isa = XCConfigurationList;
@@ -821,7 +870,7 @@
 				4E083F162789B20A009E7C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4E083F172789B20A009E7C7F /* Build configuration list for PBXNativeTarget "LOLChampionsUITests" */ = {
 			isa = XCConfigurationList;
@@ -830,7 +879,7 @@
 				4E083F192789B20A009E7C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
