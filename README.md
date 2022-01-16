@@ -49,7 +49,7 @@ Modules Design:
 
 <p align="middle" >
   <img src="https://github.com/AhmedNasserSh/LOL-Champions/blob/main/Screenshots/architucure.png" width="400" />
-  <img src="https://github.com/AhmedNasserSh/LOL-Champions/blob/main/Screenshots/modules.png" width="400" /> 
+  <img src="https://github.com/AhmedNasserSh/LOL-Champions/blob/main/Screenshots/modules1.png" width="400" /> 
 </p>
 
 
