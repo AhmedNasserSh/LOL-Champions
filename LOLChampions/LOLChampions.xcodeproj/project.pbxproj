@@ -13,10 +13,10 @@
 		4E083EF82789B209009E7C7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E083EF72789B209009E7C7F /* Preview Assets.xcassets */; };
 		4E083F022789B20A009E7C7F /* LOLChampionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083F012789B20A009E7C7F /* LOLChampionsTests.swift */; };
 		4E083F0C2789B20A009E7C7F /* LOLChampionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083F0B2789B20A009E7C7F /* LOLChampionsUITests.swift */; };
-		4E083F0E2789B20A009E7C7F /* LOLChampionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E083F0D2789B20A009E7C7F /* LOLChampionsUITestsLaunchTests.swift */; };
 		4E083F2E2789B24E009E7C7F /* Home.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4E083F212789B232009E7C7F /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4E083F2F2789B24E009E7C7F /* ChampionDetails.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4E083F2A2789B238009E7C7F /* ChampionDetails.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4E188F3C278EEB2400F649C2 /* AppDiIntilizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E188F3B278EEB2400F649C2 /* AppDiIntilizer.swift */; };
+		4EA723982793E98200FCE0A7 /* UITestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA723972793E98200FCE0A7 /* UITestSupport.swift */; };
 		9148CABC87D3C998C702C2C6 /* Pods_LOLChampions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB82D5F1F3F079B6B59106C /* Pods_LOLChampions.framework */; };
 		DCB98BADA668A1BA70E97549 /* Pods_LOLChampions_LOLChampionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7534CA6B9C72850560FE5D85 /* Pods_LOLChampions_LOLChampionsTests.framework */; };
 /* End PBXBuildFile section */
@@ -92,11 +92,11 @@
 		4E083F012789B20A009E7C7F /* LOLChampionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOLChampionsTests.swift; sourceTree = "<group>"; };
 		4E083F072789B20A009E7C7F /* LOLChampionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LOLChampionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E083F0B2789B20A009E7C7F /* LOLChampionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOLChampionsUITests.swift; sourceTree = "<group>"; };
-		4E083F0D2789B20A009E7C7F /* LOLChampionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOLChampionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4E083F1B2789B232009E7C7F /* Home.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Home.xcodeproj; path = ../../features/Home/Home.xcodeproj; sourceTree = "<group>"; };
 		4E083F242789B238009E7C7F /* ChampionDetails.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ChampionDetails.xcodeproj; path = ../../features/ChampionDetails/ChampionDetails.xcodeproj; sourceTree = "<group>"; };
 		4E188F3B278EEB2400F649C2 /* AppDiIntilizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDiIntilizer.swift; sourceTree = "<group>"; };
 		4E188F41278EFFEF00F649C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4EA723972793E98200FCE0A7 /* UITestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestSupport.swift; sourceTree = "<group>"; };
 		7534CA6B9C72850560FE5D85 /* Pods_LOLChampions_LOLChampionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOLChampions_LOLChampionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E239491FB513A468B84A75 /* Pods-LOLChampionsApp-LOLChampions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampionsApp-LOLChampions.debug.xcconfig"; path = "Target Support Files/Pods-LOLChampionsApp-LOLChampions/Pods-LOLChampionsApp-LOLChampions.debug.xcconfig"; sourceTree = "<group>"; };
 		9AB82D5F1F3F079B6B59106C /* Pods_LOLChampions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOLChampions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,7 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				4E083F0B2789B20A009E7C7F /* LOLChampionsUITests.swift */,
-				4E083F0D2789B20A009E7C7F /* LOLChampionsUITestsLaunchTests.swift */,
+				4EA723972793E98200FCE0A7 /* UITestSupport.swift */,
 			);
 			path = LOLChampionsUITests;
 			sourceTree = "<group>";
@@ -548,7 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E083F0C2789B20A009E7C7F /* LOLChampionsUITests.swift in Sources */,
-				4E083F0E2789B20A009E7C7F /* LOLChampionsUITestsLaunchTests.swift in Sources */,
+				4EA723982793E98200FCE0A7 /* UITestSupport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
