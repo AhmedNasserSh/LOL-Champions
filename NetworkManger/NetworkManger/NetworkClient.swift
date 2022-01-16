@@ -6,8 +6,7 @@
 //
 
 import Foundation
-
-public class NetworkClient: NetworkClientType {
+class NetworkClient: NetworkClientType {
     public init() {}
     
     public func makeRequest(_ request: Request) async throws -> Data {

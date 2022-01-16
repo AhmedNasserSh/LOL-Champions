@@ -7,7 +7,6 @@
 
 import Foundation
 import Swinject
-import NetworkManger
 import Common
 
 public class ChampionDetailsDIIntilizer {
@@ -19,20 +18,10 @@ public class ChampionDetailsDIIntilizer {
     
     public func buildContainer() {
         registerDecoder() 
-        registerNetworkClient()
         registerImage()
         registerChampionSpell()
     }
 
-}
-// MARK: Network
-extension ChampionDetailsDIIntilizer {
-    private  func registerNetworkClient() {
-        container.register(NetworkClientType.self) { _  in
-            return NetworkClient()
-        }.inObjectScope(.transient)
-        
-    }
 }
 
 // MARK: Decoder

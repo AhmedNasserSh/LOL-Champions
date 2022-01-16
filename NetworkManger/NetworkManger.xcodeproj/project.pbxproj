@@ -17,6 +17,7 @@
 		4E2950D5278B086200A42AE3 /* NetwrokServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950D0278B086200A42AE3 /* NetwrokServiceType.swift */; };
 		4E2950D6278B086200A42AE3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950D1278B086200A42AE3 /* Request.swift */; };
 		4E2950D7278B086200A42AE3 /* NetworkClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2950D2278B086200A42AE3 /* NetworkClientType.swift */; };
+		4EA723942793E47500FCE0A7 /* NetwrokDIIntilizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA723932793E47500FCE0A7 /* NetwrokDIIntilizer.swift */; };
 		A5E4ABB6C1EF224EB9B5001C /* Pods_NetworkManger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604CCA9E2D218A702CF71CF0 /* Pods_NetworkManger.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		4E2950D0278B086200A42AE3 /* NetwrokServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetwrokServiceType.swift; sourceTree = "<group>"; };
 		4E2950D1278B086200A42AE3 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		4E2950D2278B086200A42AE3 /* NetworkClientType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientType.swift; sourceTree = "<group>"; };
+		4EA723932793E47500FCE0A7 /* NetwrokDIIntilizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwrokDIIntilizer.swift; sourceTree = "<group>"; };
 		604CCA9E2D218A702CF71CF0 /* Pods_NetworkManger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkManger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		723E1F76ACADD2A1EEA0E0B9 /* Pods-LOLChampions-NetworkManger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOLChampions-NetworkManger.release.xcconfig"; path = "Target Support Files/Pods-LOLChampions-NetworkManger/Pods-LOLChampions-NetworkManger.release.xcconfig"; sourceTree = "<group>"; };
 		730D922F7543ADB231D08CE9 /* Pods-NetworkManger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkManger.release.xcconfig"; path = "Target Support Files/Pods-NetworkManger/Pods-NetworkManger.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				4E2950D1278B086200A42AE3 /* Request.swift */,
 				4E2950A8278B079F00A42AE3 /* NetworkManger.h */,
 				4E2950A9278B079F00A42AE3 /* NetworkManger.docc */,
+				4EA723932793E47500FCE0A7 /* NetwrokDIIntilizer.swift */,
 			);
 			path = NetworkManger;
 			sourceTree = "<group>";
@@ -266,7 +269,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n\n";
 		};
 		987F8EB87FCAD0756533AC7E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -339,6 +342,7 @@
 				4E2950D5278B086200A42AE3 /* NetwrokServiceType.swift in Sources */,
 				4E2950AA278B079F00A42AE3 /* NetworkManger.docc in Sources */,
 				4E2950D6278B086200A42AE3 /* Request.swift in Sources */,
+				4EA723942793E47500FCE0A7 /* NetwrokDIIntilizer.swift in Sources */,
 				4E2950D7278B086200A42AE3 /* NetworkClientType.swift in Sources */,
 				4E2950D3278B086200A42AE3 /* NetworkError.swift in Sources */,
 				4E2950D4278B086200A42AE3 /* NetworkClient.swift in Sources */,
@@ -509,9 +513,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lol.champions.www.NetworkManger;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -538,9 +543,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lol.champions.www.NetworkManger;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -598,7 +604,7 @@
 				4E2950B8278B079F00A42AE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4E2950B9278B079F00A42AE3 /* Build configuration list for PBXNativeTarget "NetworkManger" */ = {
 			isa = XCConfigurationList;
@@ -607,7 +613,7 @@
 				4E2950BB278B079F00A42AE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4E2950BC278B079F00A42AE3 /* Build configuration list for PBXNativeTarget "NetworkMangerTests" */ = {
 			isa = XCConfigurationList;
@@ -616,7 +622,7 @@
 				4E2950BE278B079F00A42AE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
