@@ -7,6 +7,7 @@
 		<key>ChampionDetails.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+
 			<integer>16</integer>
 		</dict>
 		<key>ChampionDetailsTests.xcscheme_^#shared#^_</key>

@@ -1,0 +1,6 @@
+framework module Pods_AppCoordinator_AppCoordinatorTests {
+  umbrella header "Pods-AppCoordinator-AppCoordinatorTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

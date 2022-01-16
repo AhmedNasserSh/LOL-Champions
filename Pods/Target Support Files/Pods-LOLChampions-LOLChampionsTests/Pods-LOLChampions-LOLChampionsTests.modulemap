@@ -1,0 +1,6 @@
+framework module Pods_LOLChampions_LOLChampionsTests {
+  umbrella header "Pods-LOLChampions-LOLChampionsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
