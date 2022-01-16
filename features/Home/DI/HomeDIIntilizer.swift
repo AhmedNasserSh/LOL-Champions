@@ -7,9 +7,7 @@
 
 import Foundation
 import Swinject
-import NetworkManger
 import Common
-import AppCoordinator
 
 public class HomeDIIntilizer {
     private let container: Container
@@ -19,32 +17,11 @@ public class HomeDIIntilizer {
     }
     
     public func buildContainer() {
-        registerCoordinator()
         registerDecoder() 
-        registerNetworkClient()
         registerImage()
         registerChampions()
     }
 
-}
-// MARK: Coordinator
-extension HomeDIIntilizer {
-    private  func registerCoordinator() {
-        container.register(AppCoordinator.self) { _  in
-            return AppCoordinator()
-        }.inObjectScope(.transient)
-        
-    }
-}
-
-// MARK: Network
-extension HomeDIIntilizer {
-    private  func registerNetworkClient() {
-        container.register(NetworkClientType.self) { _  in
-            return NetworkClient()
-        }.inObjectScope(.transient)
-        
-    }
 }
 
 // MARK: Decoder

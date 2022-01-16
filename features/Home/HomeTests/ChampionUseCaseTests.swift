@@ -34,9 +34,7 @@ extension ChampionUseCaseTests {
     func initDI() {
         let container = Container()
         AppResolver.shared.setDependencyContainer(container)
-        container.register(NetworkClientType.self) { _  in
-            return NetworkClient()
-        }
+        NetwrokDIIntilizer(container: container).buildContainer()
 
         container.register(ChampionsServiceType.self) { _  in
             return ChampionsServiceMock()

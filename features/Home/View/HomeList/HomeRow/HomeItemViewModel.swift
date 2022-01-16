@@ -26,8 +26,7 @@ class HomeItemViewModel: ObservableObject, Identifiable {
         Task {
             name = champion.name
             do {
-                async let championImage = try await imageUseCase.image(for: champion.image.full)
-                image = try await championImage
+                image = try await imageUseCase.image(for: champion.image.full)
             } catch {
                 image =  UIImage(name: "temp")
             }

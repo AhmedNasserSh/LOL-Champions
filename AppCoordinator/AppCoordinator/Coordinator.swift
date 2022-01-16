@@ -11,8 +11,6 @@ import ChampionDetails
 import SwiftUI
 
 public class AppCoordinator {
-    @State public var isNavigationBarHidden: Bool = true
-
     public init() {}
     
     public func championDetailsView(with champion: Champion) -> some View {
