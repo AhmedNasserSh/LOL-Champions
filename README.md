@@ -1,9 +1,10 @@
 <h1 align="center"> LOL Champions </h1>
 
-![platform](https://img.shields.io/badge/platform-iOS-orange)
-[![GitHub license](https://img.shields.io/badge/License-Apache2.0-blue.svg)](LICENSE)
-![MVVM](https://img.shields.io/badge/MVVM-Architecture-orange)
-
+<p align="center">
+  <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache2.0-blue.svg"/></a>
+  <a href="https://developer.apple.com/ios/"><img alt="SDK" src="https://img.shields.io/badge/platform-iOS-orange"/></a>
+  <img alt="MVVM" src="https://img.shields.io/badge/MVVM-Architecture-orange"/>
+</p>
 _              |  _
 :-------------------------:|:-------------------------:
 ![UI](https://github.com/AhmedNasserSh/LOL-Champions/blob/main/Screenshots/1.png) | ![UI](https://github.com/AhmedNasserSh/LOL-Champions/blob/main/Screenshots/2.png)
@@ -42,8 +43,7 @@ Modules Design:
     - Home
     - ChampionDetails
 
-![architecture](https://github.com/AhmedNasserSh/LOL-Champions/blob/main/Screenshots/architucure.png)
-![modules](https://github.com/AhmedNasserSh/LOL-Champions/blob/main/Screenshots/modules.png)
+![architecture](https://github.com/AhmedNasserSh/LOL-Champions/blob/main/Screenshots/architucure.png)  ![modules](https://github.com/AhmedNasserSh/LOL-Champions/blob/main/Screenshots/modules.png)
 
 ## Open API
 LOL Champions uses the [LOL Champions](https://developer.riotgames.com/docs/lol#data-dragon_data-assets/) for required data.
