@@ -13,12 +13,14 @@ import Common
 import NetworkManger
 import SwiftUI
 import AppCoordinator
+import Cache
 
 class AppDiIntilizer {
     private let container = Container()
     
     func initDependencies() {
         AppResolver.shared.setDependencyContainer(container)
+        CahceDIIntilizer(container: container).buildContainer()
         NetwrokDIIntilizer(container: container).buildContainer()
         AppCoordinatorDIIntilizer(container: container).buildContainer()
         HomeDIIntilizer(container: container).buildContainer()

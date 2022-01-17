@@ -7,16 +7,25 @@
 
 import Foundation
 import Common
+import Cache
 
 protocol ChampionInfoRepoType {
     func fetchChampionInfo(championName: String) async throws -> ChampionInfoResponse
 }
 
 struct ChampionInfoRepo: ChampionInfoRepoType {
-    
-   @Inject private var service: ChampionInfoServiceType
+    @Inject private var service: ChampionInfoServiceType
+    @Inject private var storage: SpellStoreType
     
     func fetchChampionInfo(championName: String) async throws -> ChampionInfoResponse {
-        return try await service.fetchChampionInfo(championName: championName)
+        if let cached = storage.fetchSpells(for: championName) ,
+           !cached.data.isEmpty {
+            return cached
+        }
+        
+        let response =  try await service.fetchChampionInfo(championName: championName)
+        let spells = response.data[championName]?.spells ?? []
+        storage.saveSpells(for: championName, spells: spells)
+        return response        
     }
 }

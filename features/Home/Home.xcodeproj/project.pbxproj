@@ -27,6 +27,7 @@
 		4E6CB88A2793309D006DDC05 /* ChampionRepoMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CB8892793309D006DDC05 /* ChampionRepoMock.swift */; };
 		4E7A7DF7278E59DE00BEF94D /* HomeDIIntilizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A7DF6278E59DE00BEF94D /* HomeDIIntilizer.swift */; };
 		4E972CF227916AAC009B559D /* UIImage + bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E972CF127916AAC009B559D /* UIImage + bundle.swift */; };
+		4ECCC75827954AC000070F0B /* Cache.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4ECCC75127954AB300070F0B /* Cache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4EDF3D81278D8A0B00A45CE4 /* ImageDownloaderRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D80278D8A0B00A45CE4 /* ImageDownloaderRepo.swift */; };
 		4EDF3D84278D8BAB00A45CE4 /* ImageDownloaderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D83278D8BAB00A45CE4 /* ImageDownloaderUseCase.swift */; };
 		4EDF3D87278D8C4900A45CE4 /* ChampionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3D86278D8C4900A45CE4 /* ChampionsService.swift */; };
@@ -87,6 +88,20 @@
 			remoteGlobalIDString = 4E5F768D27930BC900A22FC5;
 			remoteInfo = AppCoordinatorTests;
 		};
+		4ECCC75027954AB300070F0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ECCC74927954AB300070F0B /* Cache.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4ECCC6E727953DDA00070F0B;
+			remoteInfo = Cache;
+		};
+		4ECCC75227954AB300070F0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ECCC74927954AB300070F0B /* Cache.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4ECCC6F127953DDA00070F0B;
+			remoteInfo = CacheTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -96,6 +111,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4ECCC75827954AC000070F0B /* Cache.framework in Copy Frameworks */,
 				4E6CB86727930D22006DDC05 /* AppCoordinator.framework in Copy Frameworks */,
 				4E2950C8278B07BA00A42AE3 /* NetworkManger.framework in Copy Frameworks */,
 				4E083EC52789AFA1009E7C7F /* Common.framework in Copy Frameworks */,
@@ -130,6 +146,7 @@
 		4E6CB8892793309D006DDC05 /* ChampionRepoMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionRepoMock.swift; sourceTree = "<group>"; };
 		4E7A7DF6278E59DE00BEF94D /* HomeDIIntilizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDIIntilizer.swift; sourceTree = "<group>"; };
 		4E972CF127916AAC009B559D /* UIImage + bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + bundle.swift"; sourceTree = "<group>"; };
+		4ECCC74927954AB300070F0B /* Cache.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cache.xcodeproj; path = ../../Cache/Cache.xcodeproj; sourceTree = "<group>"; };
 		4EDF3D80278D8A0B00A45CE4 /* ImageDownloaderRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderRepo.swift; sourceTree = "<group>"; };
 		4EDF3D83278D8BAB00A45CE4 /* ImageDownloaderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderUseCase.swift; sourceTree = "<group>"; };
 		4EDF3D86278D8C4900A45CE4 /* ChampionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsService.swift; sourceTree = "<group>"; };
@@ -225,6 +242,7 @@
 		4E083E132789A1F9009E7C7F /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				4ECCC74927954AB300070F0B /* Cache.xcodeproj */,
 				4E6CB85A27930D19006DDC05 /* AppCoordinator.xcodeproj */,
 				4E2950BF278B07AF00A42AE3 /* NetworkManger.xcodeproj */,
 				4E083EBC2789AF8B009E7C7F /* Common.xcodeproj */,
@@ -320,6 +338,15 @@
 				4E7A7DF6278E59DE00BEF94D /* HomeDIIntilizer.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		4ECCC74A27954AB300070F0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4ECCC75127954AB300070F0B /* Cache.framework */,
+				4ECCC75327954AB300070F0B /* CacheTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		4EDF3D7F278D89E900A45CE4 /* Repo */ = {
@@ -455,6 +482,10 @@
 					ProjectRef = 4E6CB85A27930D19006DDC05 /* AppCoordinator.xcodeproj */;
 				},
 				{
+					ProductGroup = 4ECCC74A27954AB300070F0B /* Products */;
+					ProjectRef = 4ECCC74927954AB300070F0B /* Cache.xcodeproj */;
+				},
+				{
 					ProductGroup = 4E083EBD2789AF8B009E7C7F /* Products */;
 					ProjectRef = 4E083EBC2789AF8B009E7C7F /* Common.xcodeproj */;
 				},
@@ -512,6 +543,20 @@
 			fileType = wrapper.cfbundle;
 			path = AppCoordinatorTests.xctest;
 			remoteRef = 4E6CB86127930D19006DDC05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4ECCC75127954AB300070F0B /* Cache.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cache.framework;
+			remoteRef = 4ECCC75027954AB300070F0B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4ECCC75327954AB300070F0B /* CacheTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CacheTests.xctest;
+			remoteRef = 4ECCC75227954AB300070F0B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

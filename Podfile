@@ -43,6 +43,14 @@ target 'NetworkMangerTests' do
 end
 end
 
+target 'Cache' do
+project 'Cache/Cache.project'
+app_pods
+target 'CacheTests' do
+    pod 'Swinject'
+end
+end
+
 target 'Home' do
 project 'features/Home/Home.project'
 app_pods

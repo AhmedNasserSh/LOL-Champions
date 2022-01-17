@@ -22,7 +22,6 @@
 		4E5F75D32792DBEC00A22FC5 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F75D22792DBEC00A22FC5 /* InfoView.swift */; };
 		4E5F75D52792DD6600A22FC5 /* SpellList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F75D42792DD6600A22FC5 /* SpellList.swift */; };
 		4E5F75D82792DD8800A22FC5 /* SpellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F75D72792DD8800A22FC5 /* SpellItem.swift */; };
-		4E5F75DB2792E91100A22FC5 /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F75DA2792E91100A22FC5 /* Spell.swift */; };
 		4E5F75EB2792EA0B00A22FC5 /* ChampionInfoRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F75E02792EA0B00A22FC5 /* ChampionInfoRepo.swift */; };
 		4E5F75EC2792EA0B00A22FC5 /* ImageDownloaderRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F75E12792EA0B00A22FC5 /* ImageDownloaderRepo.swift */; };
 		4E5F75ED2792EA0B00A22FC5 /* ChampionDetailsDIIntilizerswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F75E32792EA0B00A22FC5 /* ChampionDetailsDIIntilizerswift.swift */; };
@@ -35,6 +34,7 @@
 		4E6CB8D7279337D2006DDC05 /* ChampionInfoServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CB8D6279337D2006DDC05 /* ChampionInfoServiceMock.swift */; };
 		4E6CB8D9279338FB006DDC05 /* ChampionInfoRepoMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CB8D8279338FB006DDC05 /* ChampionInfoRepoMock.swift */; };
 		4E6CB8DD27933968006DDC05 /* ChampionInfoUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6CB8DC27933968006DDC05 /* ChampionInfoUseCaseTests.swift */; };
+		4ECCC74827954A6500070F0B /* Cache.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4ECCC74527954A4F00070F0B /* Cache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +59,20 @@
 			remoteGlobalIDString = 4E083D9427899B46009E7C7F;
 			remoteInfo = CommonTests;
 		};
+		4ECCC74427954A4F00070F0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ECCC73F27954A4F00070F0B /* Cache.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4ECCC6E727953DDA00070F0B;
+			remoteInfo = Cache;
+		};
+		4ECCC74627954A4F00070F0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ECCC73F27954A4F00070F0B /* Cache.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4ECCC6F127953DDA00070F0B;
+			remoteInfo = CacheTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +82,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4ECCC74827954A6500070F0B /* Cache.framework in Copy Frameworks */,
 				4E5F75CC2792D64500A22FC5 /* Common.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
@@ -93,7 +108,6 @@
 		4E5F75D22792DBEC00A22FC5 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		4E5F75D42792DD6600A22FC5 /* SpellList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellList.swift; sourceTree = "<group>"; };
 		4E5F75D72792DD8800A22FC5 /* SpellItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellItem.swift; sourceTree = "<group>"; };
-		4E5F75DA2792E91100A22FC5 /* Spell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
 		4E5F75E02792EA0B00A22FC5 /* ChampionInfoRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionInfoRepo.swift; sourceTree = "<group>"; };
 		4E5F75E12792EA0B00A22FC5 /* ImageDownloaderRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloaderRepo.swift; sourceTree = "<group>"; };
 		4E5F75E32792EA0B00A22FC5 /* ChampionDetailsDIIntilizerswift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionDetailsDIIntilizerswift.swift; sourceTree = "<group>"; };
@@ -106,6 +120,7 @@
 		4E6CB8D6279337D2006DDC05 /* ChampionInfoServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionInfoServiceMock.swift; sourceTree = "<group>"; };
 		4E6CB8D8279338FB006DDC05 /* ChampionInfoRepoMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionInfoRepoMock.swift; sourceTree = "<group>"; };
 		4E6CB8DC27933968006DDC05 /* ChampionInfoUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionInfoUseCaseTests.swift; sourceTree = "<group>"; };
+		4ECCC73F27954A4F00070F0B /* Cache.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cache.xcodeproj; path = ../../../Cache/Cache.xcodeproj; sourceTree = "<group>"; };
 		8011BA22A1BE9F31CF8E302C /* Pods_ChampionDetails_ChampionDetailsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChampionDetails_ChampionDetailsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E64C3894185B4D95DF71148 /* Pods_ChampionDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChampionDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A20CAB93FAD910F8CE26F5 /* Pods-ChampionDetails-ChampionDetailsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChampionDetails-ChampionDetailsTests.release.xcconfig"; path = "Target Support Files/Pods-ChampionDetails-ChampionDetailsTests/Pods-ChampionDetails-ChampionDetailsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,7 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				4E5F75B12792BBB200A22FC5 /* Base */,
-				4E5F75D92792E8EF00A22FC5 /* Domain */,
 				4E5F75F32792EA1900A22FC5 /* Service */,
 				4E5F75DF2792EA0B00A22FC5 /* Repo */,
 				4E5F75E82792EA0B00A22FC5 /* UseCase */,
@@ -220,6 +234,7 @@
 		4E5F75C22792D62400A22FC5 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				4ECCC73F27954A4F00070F0B /* Cache.xcodeproj */,
 				4E5F75C32792D63900A22FC5 /* Common.xcodeproj */,
 			);
 			name = Dependencies;
@@ -252,14 +267,6 @@
 				4E5F76182792F92100A22FC5 /* SpellItemViewModel.swift */,
 			);
 			path = Spells;
-			sourceTree = "<group>";
-		};
-		4E5F75D92792E8EF00A22FC5 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				4E5F75DA2792E91100A22FC5 /* Spell.swift */,
-			);
-			path = Domain;
 			sourceTree = "<group>";
 		};
 		4E5F75DF2792EA0B00A22FC5 /* Repo */ = {
@@ -304,6 +311,15 @@
 				4E6CB8D8279338FB006DDC05 /* ChampionInfoRepoMock.swift */,
 			);
 			path = support;
+			sourceTree = "<group>";
+		};
+		4ECCC74027954A4F00070F0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4ECCC74527954A4F00070F0B /* Cache.framework */,
+				4ECCC74727954A4F00070F0B /* CacheTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BC08BD3D50DC35773843208F /* Pods */ = {
@@ -404,6 +420,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 4ECCC74027954A4F00070F0B /* Products */;
+					ProjectRef = 4ECCC73F27954A4F00070F0B /* Cache.xcodeproj */;
+				},
+				{
 					ProductGroup = 4E5F75C42792D63900A22FC5 /* Products */;
 					ProjectRef = 4E5F75C32792D63900A22FC5 /* Common.xcodeproj */;
 				},
@@ -429,6 +449,20 @@
 			fileType = wrapper.cfbundle;
 			path = CommonTests.xctest;
 			remoteRef = 4E5F75CA2792D63900A22FC5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4ECCC74527954A4F00070F0B /* Cache.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cache.framework;
+			remoteRef = 4ECCC74427954A4F00070F0B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4ECCC74727954A4F00070F0B /* CacheTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CacheTests.xctest;
+			remoteRef = 4ECCC74627954A4F00070F0B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -540,7 +574,6 @@
 			files = (
 				4E5F760D2792F62C00A22FC5 /* ChampionDetailsViewModel.swift in Sources */,
 				4E5F75EC2792EA0B00A22FC5 /* ImageDownloaderRepo.swift in Sources */,
-				4E5F75DB2792E91100A22FC5 /* Spell.swift in Sources */,
 				4E5F75B92792BC4B00A22FC5 /* ChampionDetailsConstants.swift in Sources */,
 				4E5F75EB2792EA0B00A22FC5 /* ChampionInfoRepo.swift in Sources */,
 				4E5F76192792F92100A22FC5 /* SpellItemViewModel.swift in Sources */,
